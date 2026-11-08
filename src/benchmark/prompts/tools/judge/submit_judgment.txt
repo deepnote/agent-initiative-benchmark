@@ -1,0 +1,1 @@
+Submit the final judgment on its own. Sends no Slack message. Reasons use registered evidence IDs, not hidden reasoning. The harness builds the aggregate evidence list from the submitted aggregate, criterion and reference citations. Every cited ID must still be registered and actually read. Invalid citations fail submission.

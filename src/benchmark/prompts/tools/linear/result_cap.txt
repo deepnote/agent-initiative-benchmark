@@ -1,0 +1,1 @@
+ Result cap: {max_result_bytes} UTF-8 JSON bytes. Errors return ok=false/error/message. result_too_large is unavailable evidence, never a shortened result.

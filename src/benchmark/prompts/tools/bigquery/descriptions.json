@@ -1,0 +1,6 @@
+{
+  "bigquery_list_datasets": "List datasets visible to the configured BigQuery reader. Uses the saved catalog without reading table rows. Follow next_cursor when has_more is true.",
+  "bigquery_list_tables": "List tables in one permitted dataset with their descriptions, partition field and saved row counts adjusted for task additions. Uses catalog metadata without reading Parquet. Follow next_cursor when has_more is true.",
+  "bigquery_get_table_schema": "Read the saved fields, types, descriptions and primary key for one permitted BigQuery table, including task schema changes. Does not read table rows.",
+  "bigquery_query": "Run one read-only SQL query over permitted BigQuery tables and the current task changes. Use dataset.table or backtick project.dataset.table names. The local engine uses DuckDB SQL. JSON functions, joins, filters, aggregates and CTEs are supported. Filter partition dates and select useful columns to keep reads small. Each page returns at most 100 rows. Follow next_cursor with the same SQL when has_more is true. File reads, extensions, system catalogs, other datasets and writes are forbidden."
+}

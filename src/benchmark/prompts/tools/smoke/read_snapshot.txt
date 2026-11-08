@@ -1,0 +1,1 @@
+Read the tiny synthetic quiet snapshot. No writes or external access.

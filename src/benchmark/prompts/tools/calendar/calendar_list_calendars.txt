@@ -1,0 +1,1 @@
+List permitted calendars, names, time zones and access roles. Continue with next_cursor. freeBusyReader allows availability only.

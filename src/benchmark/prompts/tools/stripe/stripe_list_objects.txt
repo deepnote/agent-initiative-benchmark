@@ -1,0 +1,1 @@
+List visible standalone products, prices or refunds. Set table to products, prices or refunds. product_id filters prices. payment_id filters refunds. Returns complete stored fields with total and next_cursor, including objects absent from subscription or payment results.

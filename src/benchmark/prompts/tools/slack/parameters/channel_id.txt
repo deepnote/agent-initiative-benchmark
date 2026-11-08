@@ -1,0 +1,1 @@
+Returned Slack channel ID. Discover destinations rather than guessing them.

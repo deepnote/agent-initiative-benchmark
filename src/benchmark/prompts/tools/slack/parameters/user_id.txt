@@ -1,0 +1,1 @@
+Exact active employee ID returned by slack_list_users.

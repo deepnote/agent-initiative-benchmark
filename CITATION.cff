@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use Agent Proactiveness Benchmark, please cite it using this file."
+title: Agent Proactiveness Benchmark
+type: software
+authors:
+  - name: Deepnote
+    website: https://deepnote.com
+version: "0.1.0"
+repository-code: https://github.com/deepnote/agent-proactiveness-benchmark
+url: https://github.com/deepnote/agent-proactiveness-benchmark

@@ -1,0 +1,1 @@
+Find active employees and their Slack IDs, names and job titles. Use this to choose an individual DM recipient without an earlier conversation. Returns users, has_more and next_cursor; users include id, name, real_name, display_name, title and timezone, without email. Excludes bots, deleted employees and you.

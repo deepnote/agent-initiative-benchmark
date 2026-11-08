@@ -1,0 +1,1 @@
+List native metric and state definitions with units and meanings. An unavailable catalog or missing value is not zero. Read stored observations with hubspot_read_history.

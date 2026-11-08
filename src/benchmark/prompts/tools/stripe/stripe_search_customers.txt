@@ -1,0 +1,1 @@
+Search visible Stripe customers by ID, name, email, description or HubSpot company ID. Empty query lists customers. Returns a page with total and next_cursor.

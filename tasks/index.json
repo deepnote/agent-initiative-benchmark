@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "tasks": [
+    {
+      "category": "Find",
+      "config": "task-01/config.json",
+      "id": "task-01",
+      "manifest_sha256": "471e03a12e1c5fa72d0c052ad0c3e72545781c7289e16aa35858274e0c897037",
+      "package": "task-01/package",
+      "title": "Restore the source behind an adoption claim",
+      "version": 1
+    },
+    {
+      "category": "Explain",
+      "config": "task-02/config.json",
+      "id": "task-02",
+      "manifest_sha256": "c7388f8b4ad29ff89a38aa6c2d145e54aaca982898a1a8ce7d05e0e6fbb9f17d",
+      "package": "task-02/package",
+      "title": "Explain when a billing change takes effect",
+      "version": 1
+    },
+    {
+      "category": "Analyze",
+      "config": "task-03/config.json",
+      "id": "task-03",
+      "manifest_sha256": "bcb7da42a2bc567fc404a8cfaace16a117b4f0b151741a7d3a6d64cff00a68c2",
+      "package": "task-03/package",
+      "title": "Recognize an already handled traffic decline",
+      "version": 1
+    },
+    {
+      "category": "Verify",
+      "config": "task-04/config.json",
+      "id": "task-04",
+      "manifest_sha256": "a4f3f6ff01cd3baf292f1b1c93e93bfa0cb7558477eb1818f300906907d40ccc",
+      "package": "task-04/package",
+      "title": "Verify recovery before closing a customer incident",
+      "version": 1
+    },
+    {
+      "category": "Diagnose",
+      "config": "task-05/config.json",
+      "id": "task-05",
+      "manifest_sha256": "d0ebbca921efb4e79762fc8d15dc52c6621c1ffd361cce8fcb47dd7c3cc7f3a1",
+      "package": "task-05/package",
+      "title": "Connect preview and publishing failures",
+      "version": 1
+    },
+    {
+      "category": "Decide",
+      "config": "task-06/config.json",
+      "id": "task-06",
+      "manifest_sha256": "065edc2bb8d332decf89ca2999972f63d3076a8d98bfd12ad12110dbec082ec9",
+      "package": "task-06/package",
+      "title": "Prioritize three customer cases",
+      "version": 1
+    },
+    {
+      "category": "Coordinate",
+      "config": "task-07/config.json",
+      "id": "task-07",
+      "manifest_sha256": "e151fa542d774eb084adfd8336f6cc7696aebfaff3cd284a5e9479a0853c35ed",
+      "package": "task-07/package",
+      "title": "Find a meeting time after a reschedule",
+      "version": 1
+    },
+    {
+      "category": "Guard",
+      "config": "task-08/config.json",
+      "id": "task-08",
+      "manifest_sha256": "a225ff4cd4e039bef6841af96f9fa27a8d96fb48f1af9980334beb5574b315da",
+      "package": "task-08/package",
+      "title": "Answer an analytics request without exposing user histories",
+      "version": 1
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+{
+  "brief": {
+    "ideal_action": "Explain the supported causal chain and the evidence that separates it from the competing cause. Route technical evidence to the current engineering owner and give affected work owners a readable impact summary. Preserve uncertainty about anything the records do not establish.",
+    "intent": "action",
+    "situation": "Different teams are discussing seemingly unrelated product failures. Product observations, operational events and a Linear issue support one shared technical mechanism and distinguish it from a plausible competing cause. The people handling the separate symptoms have not connected the impact. The main fresh opportunity is an employee work update or apparent need, not a request for someone to solve or check it.",
+    "task_id": "task-05"
+  },
+  "changes": [
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Preview and publishing incident discussions.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C9331AE59467298B2",
+          "ts": "1790817007.143902"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Preview and publishing incident discussions.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C0CDF6C4A28273CC2",
+          "ts": "1790816861.583018"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Preview and publishing incident discussions.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C4875E318B5ABF803",
+          "ts": "1790816757.447547"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Preview and publishing incident discussions.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C4875E318B5ABF803",
+          "ts": "1790816820.728235"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Preview and publishing incident discussions.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C4875E318B5ABF803",
+          "ts": "1790816900.230033"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Preview and publishing incident discussions.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C4875E318B5ABF803",
+          "ts": "1790816963.139291"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Shared asset-reference logic and engineering ownership.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "712574dc-78c4-4513-9ec9-67ff746cde30",
+          "table": "issues"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Shared asset-reference logic and engineering ownership.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "0f52982e-a024-46e8-83ed-951cf276b404",
+          "table": "comments"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Shared asset-reference logic and engineering ownership.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "b7e2dc4c-2ea9-477d-b0dc-1e49ad98f025",
+          "table": "comments"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Shared asset-reference logic and engineering ownership.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "5cf4c976-cda1-41b0-954c-d62ebf42b108",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Shared asset-reference logic and engineering ownership.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "b3834a42-3313-4b4b-aab4-8694e27c310f",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Shared asset-reference logic and engineering ownership.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "97d27c5a-3478-455e-896f-a43e2816d504",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/bigquery/seed.json",
+      "operation": "add",
+      "reason": "Controlled image-request observations.",
+      "service": "bigquery",
+      "source": {
+        "record": {
+          "dataset_id": "site_operations",
+          "primary_key": {
+            "request_id": "req_946dc70f638b46aa83ef0214"
+          },
+          "table": "rows",
+          "table_id": "edge_requests"
+        }
+      }
+    },
+    {
+      "file": "delta/bigquery/seed.json",
+      "operation": "add",
+      "reason": "Controlled image-request observations.",
+      "service": "bigquery",
+      "source": {
+        "record": {
+          "dataset_id": "site_operations",
+          "primary_key": {
+            "request_id": "req_8db6ec7124fb49aa92ca0853"
+          },
+          "table": "rows",
+          "table_id": "edge_requests"
+        }
+      }
+    },
+    {
+      "file": "delta/bigquery/seed.json",
+      "operation": "add",
+      "reason": "Controlled image-request observations.",
+      "service": "bigquery",
+      "source": {
+        "record": {
+          "dataset_id": "site_operations",
+          "primary_key": {
+            "request_id": "req_c2970f3a125c48b7a4e96308"
+          },
+          "table": "rows",
+          "table_id": "edge_requests"
+        }
+      }
+    },
+    {
+      "file": "delta/bigquery/seed.json",
+      "operation": "add",
+      "reason": "Controlled image-request observations.",
+      "service": "bigquery",
+      "source": {
+        "record": {
+          "dataset_id": "site_operations",
+          "primary_key": {
+            "request_id": "req_a83e741d609e4c8fa286097b"
+          },
+          "table": "rows",
+          "table_id": "edge_requests"
+        }
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C9331AE59467298B2",
+          "ts": "1790817007.143902"
+        }
+      },
+      "why": "Main implicit opportunity. Brian classifies a blank preview diagram as cache follow-up and supplies the controlled capture conditions."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C0CDF6C4A28273CC2",
+          "ts": "1790816861.583018"
+        }
+      },
+      "why": "Separate account owner is preparing an avoidable image request without connecting the preview symptom."
+    },
+    {
+      "origin": "baseline",
+      "service": "posthog",
+      "source": {
+        "record": {
+          "event_uuid": "ph_5b6aba7f3f3b8d108f0abf13",
+          "table": "events"
+        }
+      },
+      "why": "Original September 30 Cedarmill event establishes the site, native publish attempt, failed asset-validation step and error. It does not itself prove the file is absent."
+    },
+    {
+      "origin": "baseline",
+      "service": "posthog",
+      "source": {
+        "record": {
+          "event_uuid": "ph_3eb6214e2838a5d336fd0b4b",
+          "table": "events"
+        }
+      },
+      "why": "Original 20:59:57 mobile preview succeeded for Ambermark's exact guide. Opening the preview does not establish successful image fetching."
+    },
+    {
+      "origin": "baseline",
+      "service": "posthog",
+      "source": {
+        "query": {
+          "query": "{\"tool\":\"posthog_query_events\",\"arguments\":{\"event_names\":[\"publish_failed\"],\"event_properties\":{\"site_name\":\"Cedarmill Commerce Research Agencies Guide\"},\"start_time\":\"2026-09-30T00:00:00Z\",\"end_time\":\"2026-10-01T00:00:00Z\",\"limit\":10,\"selected_properties\":[\"site_name\",\"publish_id\",\"failed_step\",\"error_code\",\"success\"]}}"
+        }
+      },
+      "why": "Executed native discovery route from the visible site name returned exactly one original failure with no continuation."
+    },
+    {
+      "origin": "baseline",
+      "service": "posthog",
+      "source": {
+        "query": {
+          "query": "{\"tool\":\"posthog_query_events\",\"arguments\":{\"event_names\":[\"preview_opened\"],\"event_properties\":{\"site_name\":\"Ambermark Cloud Regional Agencies Guide\"},\"start_time\":\"2026-09-30T00:00:00Z\",\"end_time\":\"2026-10-01T00:00:00Z\",\"limit\":10,\"selected_properties\":[\"site_name\",\"page_id\",\"draft_revision\",\"preview_mode\",\"success\"]}}"
+        }
+      },
+      "why": "Executed native route returned two original previews. Time, page and mobile mode distinguish the reported observation from an earlier desktop preview of another page."
+    },
+    {
+      "origin": "delta",
+      "service": "bigquery",
+      "source": {
+        "query": {
+          "query": "SELECT request_id, occurred_at, received_at, customer_id, website_id, path, method, status_code, cache_status, region FROM site_operations.edge_requests WHERE request_date = '2026-09-30' AND website_id = 'ebd3467a-aa81-522f-a15f-a8a7b623d335' AND occurred_at >= TIMESTAMP '2026-09-30 23:12:00' AND occurred_at < TIMESTAMP '2026-09-30 23:13:00' ORDER BY occurred_at"
+        }
+      },
+      "why": "Four captured requests separate the lowercase preview URL from the case-preserving library URL. Both miss and bypass retain the lowercase 404, while the case-preserving bypass returns 200."
+    },
+    {
+      "origin": "baseline",
+      "service": "bigquery",
+      "source": {
+        "query": {
+          "query": "SELECT publish_id, occurred_at, received_at, customer_id, workspace_id, website_id, event_name, outcome, cache_hit_ratio FROM site_operations.publish_runs WHERE event_date = '2026-09-30' AND website_id = 'c8d956cc-4532-56cd-b28f-44f57d591545' AND occurred_at BETWEEN TIMESTAMP '2026-09-30 21:03:00' AND TIMESTAMP '2026-09-30 21:04:00' ORDER BY occurred_at"
+        }
+      },
+      "why": "Executed query corroborates a failed run at the same site and time despite a high recorded cache ratio. Warehouse publish IDs differ from PostHog IDs and must not be equated."
+    },
+    {
+      "origin": "delta",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "712574dc-78c4-4513-9ec9-67ff746cde30",
+          "table": "issues"
+        }
+      },
+      "why": "ENGIN-19 identifies the production reference mutation, open implementation state, current assignee and supporting comments."
+    },
+    {
+      "origin": "delta",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "0f52982e-a024-46e8-83ed-951cf276b404",
+          "table": "comments"
+        }
+      },
+      "why": "Explicit shared-call implementation evidence and the local controlled experiment establish more than correlation."
+    },
+    {
+      "origin": "delta",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "97d27c5a-3478-455e-896f-a43e2816d504",
+          "table": "history"
+        }
+      },
+      "why": "Dated handoff establishes Mateo as current receiving engineer rather than Ren, the initial transport investigator."
+    },
+    {
+      "origin": "baseline",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "80c3000e-5252-5ecd-aa82-a8bb9a07f0f2",
+          "table": "issues"
+        }
+      },
+      "why": "Older unresolved ENGIN-11 is a plausible missing-binary alternative. Its inspected cases concern migration discovery, not this saved-path mutation. Pavel's review remains open."
+    },
+    {
+      "origin": "baseline",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "5098b8dd-d363-5a51-959b-f376ca3c522c",
+          "table": "issues"
+        }
+      },
+      "why": "Renderer metadata work remains restricted with fallback coverage open. It does not establish renewed public exposure or explain these asset-path requests."
+    },
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C14E434EB9871B46E",
+          "ts": "1788852987.953356"
+        }
+      },
+      "why": "Older illustrative package-case discussion is relevant conceptual context but supplies no production implementation proof or customer resolution."
+    },
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C4875E318B5ABF803",
+          "ts": "1790790479.038953"
+        }
+      },
+      "why": "Complete original CSV thread settles the boundaries continued by the fresh, visibly handled sketch update."
+    },
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C4875E318B5ABF803",
+          "ts": "1790752586.276796"
+        }
+      },
+      "why": "Complete original chooser thread supplies the answer continued by the fresh sketch update and acknowledgment."
+    }
+  ],
+  "meta": {
+    "build_ref": {
+      "build_id": "pagemantle-100e-30d-20261019-085526",
+      "manifest_sha256": "1d49f40665bdef2f8b7a1099ed799bcea1eee9e7c09828e2be86047e1da97e5e"
+    },
+    "config_ref": {
+      "sha256": "ff0b10b5d8864cd784909d8732e58c8f93f82782827c8368137fb38edd39f2e1",
+      "uri": "tasks/task-05/config.json"
+    },
+    "schema_version": 1,
+    "snapshot_time": "2026-10-01T01:15:08.233369+00:00",
+    "task_id": "task-05",
+    "version": 1
+  },
+  "notes": "Brian is treating Ambermark's blank preview diagram as a cache follow-up. Jonah is preparing an image reupload request after Cedarmill's publish failed asset validation. These recent work updates expose a useful opportunity without asking the agent to investigate.\n\nThe Engineering trace identifies whole-URL lowercasing in a shared reference normalizer used by publish validation and preview URL construction. Cedarmill's local controlled experiment locates the path-case mutation before asset lookup. Ambermark's unchanged-session requests show the preview-issued lowercase URL failing on cache hit, miss and bypass, while the case-preserving Asset Library URL succeeds on bypass. Together these observations support a shared case-sensitive path fault rather than stale cache alone.\n\nA successful preview opening does not prove image delivery, and a high aggregate cache ratio does not prove healthy asset responses. The generic ASSET_REFERENCE_MISSING error is not unique to this cause. ENGIN-11 and ENGIN-2 remain separate unresolved investigations. PostHog and warehouse publish IDs differ, so site and observation time provide context without establishing exact publish-ID equivalence. Ambermark's 21:01 publishing failure remains a follow-up question, not another proven instance.\n\nCurrent assignment and dated handoff identify Mateo as the implementation owner. Brian and Jonah need a readable explanation of how the evidence changes their next steps. Mateo needs the shared mechanism, both callers, path/cache controls and issue reference. Connected thread replies or a suitable technical message that reaches the relevant owners are valid. The experiment is not a deployed fix. Keep rollout state, live-image impact, complete affected-customer scope and customer verification unresolved. The acknowledged Engineering sketch discussions need no additional reply.",
+  "reference": {
+    "example_messages": [
+      {
+        "destination": {
+          "channel_id": "C9331AE59467298B2",
+          "kind": "thread",
+          "thread_ts": "1790817007.143902"
+        },
+        "text": "Brian, this looks connected to Cedarmill's publishing failure through the asset-reference normalizer in ENGIN-19. Your lowercase diagram URL returned 404 even on cache miss and bypass, while the Asset Library URL with its original letter case returned 200 in the unchanged session. That supports a changed reference rather than stale cache alone. A preview opening successfully doesn't establish that its images loaded. Mateo now owns the shared normalizer work. The repair is not deployed, and live-image impact is still unverified."
+      },
+      {
+        "destination": {
+          "channel_id": "C0CDF6C4A28273CC2",
+          "kind": "thread",
+          "thread_ts": "1790816861.583018"
+        },
+        "text": "Jonah, hold the reupload request for the traced Cedarmill image while Mateo checks ENGIN-19. Engineering found the file at its saved path, but validation changed the path's letter case before looking it up. The same code also builds preview image URLs, which connects Brian's Ambermark diagram report. This is a supported diagnosis for these inspected references, not proof that every missing-image error has the same cause or that publishing has recovered."
+      },
+      {
+        "destination": {
+          "channel_id": "C0711D32123EBD4CA",
+          "kind": "channel"
+        },
+        "text": "<@U6E07B5762C>, Brian's fresh Ambermark preview report supplies another affected caller for ENGIN-19. The guide's 23:12 UTC edge capture shows /assets/launch/diagram.webp returning 404 on hit, miss and bypass, followed by /assets/Launch/Diagram.webp returning 200 on bypass. Brian records one session and no asset or access edits. Combined with your normalizer trace and Cedarmill's asset-validation failure, this supports path lowercasing before lookup and preview URL construction. Please include the Ambermark preview case alongside the publish-validation caller check. The local experiment is not deployment evidence. Ren retains captures, but the current issue and handoff name you as implementation owner."
+      }
+    ],
+    "important_mistakes": [
+      "Treating correlation, matching app versions or the generic ASSET_REFERENCE_MISSING error as sufficient causal proof.",
+      "Ignoring the cache-miss and bypass controls, or treating a cache hit as proof that stale cache is the sole cause.",
+      "Treating preview_opened success as proof that every preview resource rendered.",
+      "Requesting a replacement upload for the specifically traced existing file without considering the changed lookup path.",
+      "Routing implementation evidence only to the initial transport investigator or Infrastructure despite the current assignment and dated handoff.",
+      "Equating warehouse publish IDs with PostHog publish IDs, or combining different preview pages and revisions.",
+      "Claiming deployment, customer recovery, live-site impact or a complete affected-customer count.",
+      "Closing ENGIN-11, ENGIN-2 or another older investigation without evidence connecting and resolving its distinct case.",
+      "Sending only technical request rows to account-facing owners without explaining what changes in their next steps.",
+      "Repeating answers in the visibly handled sketch conversations while missing the shared customer-impact opportunity."
+    ],
+    "intent": "action",
+    "reason": "The supported causal chain is whole-URL lowercasing, changed case-sensitive asset paths, failed publish lookup and incorrect preview resource URLs. Cedarmill's trace and local controlled experiment identify the implementation boundary. Ambermark's unchanged-session path and cache controls connect the separate image symptom and distinguish stale cache alone from the shared mechanism. Brian and Jonah need an understandable impact summary before continuing separate handling. Mateo needs the technical evidence because the current assignment and dated handoff give him implementation ownership. Split or combined Slack interventions are acceptable when both practical audiences receive usable information and uncertainty is preserved."
+  },
+  "scenario": "Support is carrying Ambermark Cloud's blank preview diagram as a cache follow-up. Customer Success is preparing to request original images after Cedarmill Commerce's publish failed asset validation. PostHog events establish the exact site and workflow observations, including a successful preview opening that does not prove successful resource delivery.\n\nA newly recorded Engineering trace shows a shared reference normalizer lowercasing case-sensitive paths in publish validation and preview URL construction. Controlled Ambermark requests retain a lowercase-path 404 through cache miss and bypass, while the case-preserving Asset Library URL succeeds. The implementation handoff has moved from transport investigation to Mateo Silva. The useful intervention connects the impact for the two work owners and routes the technical evidence to Mateo without claiming a deployed repair."
+}

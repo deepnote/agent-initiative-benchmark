@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "channels": 6,
+    "files": 0,
+    "messages": 9,
+    "reactions": 0,
+    "threads": 1,
+    "users": 4,
+    "workspaces": 1
+  },
+  "format_version": 1,
+  "seed_sha256": "5523cd4df7102be3a678f9c46b2cb70a61f0c3c333e2e6309a2e04ff1868f3ee",
+  "source": "baseline-seed.json"
+}

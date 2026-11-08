@@ -1,0 +1,493 @@
+{
+  "brief": {
+    "ideal_action": null,
+    "intent": "silence",
+    "situation": "Clara has reopened an old search chart for a guide that moved to a new reader-facing route. The old URL looks worse. Felix and Rachel have a current decision recorded in a Linear issue, and their working review uses the whole moved page group. Use Google Search Console performance and URL inspection, Google Analytics landing-page reports and the Linear issue to determine whether the discussion has an unhandled problem.",
+    "task_id": "task-03"
+  },
+  "changes": [
+    {
+      "file": "delta/analytics/seed.json",
+      "operation": "add",
+      "reason": "Organic Search landing observations for the guide.",
+      "service": "analytics",
+      "source": {
+        "record": {
+          "row_id": "gas_723e95ba1d69c807f243",
+          "table": "sessions"
+        }
+      }
+    },
+    {
+      "file": "delta/analytics/seed.json",
+      "operation": "add",
+      "reason": "Organic Search landing observations for the guide.",
+      "service": "analytics",
+      "source": {
+        "record": {
+          "row_id": "gas_a527c4de93f6108b2e75",
+          "table": "sessions"
+        }
+      }
+    },
+    {
+      "file": "delta/search_console/seed.json",
+      "operation": "add",
+      "reason": "Route inspections and scoped search-performance observations.",
+      "service": "search_console",
+      "source": {
+        "record": {
+          "property_id": "sc-domain:pagemantle.com",
+          "source_event_id": "sc_78d6c4e13ba029f580a7",
+          "table": "performance_rows"
+        }
+      }
+    },
+    {
+      "file": "delta/search_console/seed.json",
+      "operation": "replace",
+      "reason": "Route inspections and scoped search-performance observations.",
+      "service": "search_console",
+      "source": {
+        "record": {
+          "inspection_url": "https://resources.pagemantle.com/guides/planning-content-migration",
+          "property_id": "sc-domain:pagemantle.com",
+          "table": "inspection_overrides"
+        }
+      }
+    },
+    {
+      "file": "delta/search_console/seed.json",
+      "operation": "replace",
+      "reason": "Route inspections and scoped search-performance observations.",
+      "service": "search_console",
+      "source": {
+        "record": {
+          "inspection_url": "https://resources.pagemantle.com/guides/a-practical-guide-to-content-migration",
+          "property_id": "sc-domain:pagemantle.com",
+          "table": "inspection_overrides"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Owned review of the guide and its current route.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "6797d47d-f2bf-42cc-ae44-d37dd11e7b83",
+          "table": "issues"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Owned review of the guide and its current route.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "d57bc4c1-5f15-46ae-9453-e17c7c23f7c1",
+          "table": "comments"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Owned review of the guide and its current route.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "a9b178cc-5d03-44d1-89d1-3050ab741185",
+          "table": "comments"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Owned review of the guide and its current route.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "a03348de-bb93-4418-8714-39c4bb13b43e",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Owned review of the guide and its current route.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "1df51766-ab53-4ffa-9b58-5f7b9c8e028e",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Owned review of the guide and its current route.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "881dcb73-183b-4e08-970f-c3798a53cdaa",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Owned review of the guide and its current route.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "issue_id": "6797d47d-f2bf-42cc-ae44-d37dd11e7b83",
+          "label_id": "c1814575-ec25-5644-845a-03e009265de8",
+          "table": "issue_labels"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Traffic-review discussion and acknowledged copy updates.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790870751.262459"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Traffic-review discussion and acknowledged copy updates.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790870832.014441"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Traffic-review discussion and acknowledged copy updates.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790870855.391160"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Traffic-review discussion and acknowledged copy updates.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790870923.270099"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Traffic-review discussion and acknowledged copy updates.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790870945.109181"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Traffic-review discussion and acknowledged copy updates.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790870981.653017"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Traffic-review discussion and acknowledged copy updates.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790871008.390086"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Traffic-review discussion and acknowledged copy updates.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790871053.994768"
+        }
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790870751.262459"
+        }
+      },
+      "why": "Fresh apparent concern about the old route's chart."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790870832.014441"
+        }
+      },
+      "why": "Natural short route to the current owner decision."
+    },
+    {
+      "origin": "delta",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "6797d47d-f2bf-42cc-ae44-d37dd11e7b83",
+          "table": "issues"
+        }
+      },
+      "why": "Defines the exact moved group, calendar windows, source scopes, owner and completed state."
+    },
+    {
+      "origin": "delta",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "d57bc4c1-5f15-46ae-9453-e17c7c23f7c1",
+          "table": "comments"
+        }
+      },
+      "why": "Dated destination check and measurement review."
+    },
+    {
+      "origin": "delta",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "a9b178cc-5d03-44d1-89d1-3050ab741185",
+          "table": "comments"
+        }
+      },
+      "why": "Rachel's current decision and Felix's next routine review."
+    },
+    {
+      "service": "search_console",
+      "source": {
+        "query": {
+          "query": "{\"tool\":\"search_console_query_performance\",\"arguments\":{\"start_date\":\"2026-09-16\",\"end_date\":\"2026-09-29\",\"site_url\":\"sc-domain:pagemantle.com\",\"dimensions\":[\"date\",\"page\"],\"dimension_filter_groups\":[{\"filters\":[{\"dimension\":\"page\",\"operator\":\"includingRegex\",\"expression\":\"^https://resources\\\\.pagemantle\\\\.com/guides/(planning-content-migration|a-practical-guide-to-content-migration)$\"}]}],\"row_limit\":1000}}"
+        }
+      },
+      "why": "The two-page performance report gives 12 clicks in each window and 1,301 versus 1,386 impressions for the moved guide group."
+    },
+    {
+      "origin": "delta",
+      "service": "search_console",
+      "source": {
+        "record": {
+          "inspection_url": "https://resources.pagemantle.com/guides/planning-content-migration",
+          "property_id": "sc-domain:pagemantle.com",
+          "table": "inspection_overrides"
+        }
+      },
+      "why": "Dated effective redirect state for the old route."
+    },
+    {
+      "origin": "delta",
+      "service": "search_console",
+      "source": {
+        "record": {
+          "inspection_url": "https://resources.pagemantle.com/guides/a-practical-guide-to-content-migration",
+          "property_id": "sc-domain:pagemantle.com",
+          "table": "inspection_overrides"
+        }
+      },
+      "why": "Dated effective indexing and selected canonical for the destination."
+    },
+    {
+      "service": "analytics",
+      "source": {
+        "query": {
+          "query": "{\"tool\":\"analytics_run_report\",\"arguments\":{\"property_id\":\"properties/297526855\",\"date_ranges\":[{\"startDate\":\"2026-09-16\",\"endDate\":\"2026-09-22\"},{\"startDate\":\"2026-09-23\",\"endDate\":\"2026-09-29\"}],\"dimensions\":[\"hostName\",\"sessionDefaultChannelGroup\",\"landingPage\"],\"metrics\":[\"sessions\",\"engagedSessions\"],\"dimension_filter\":{\"andGroup\":{\"expressions\":[{\"filter\":{\"fieldName\":\"hostName\",\"stringFilter\":{\"matchType\":\"EXACT\",\"value\":\"resources.pagemantle.com\"}}},{\"filter\":{\"fieldName\":\"sessionDefaultChannelGroup\",\"stringFilter\":{\"matchType\":\"EXACT\",\"value\":\"Organic Search\"}}},{\"filter\":{\"fieldName\":\"landingPage\",\"inListFilter\":{\"values\":[\"/guides/planning-content-migration\",\"/guides/a-practical-guide-to-content-migration\"]}}}]}},\"page_size\":100}}"
+        }
+      },
+      "why": "The scoped Organic Search landing report gives 18 sessions and nine engaged sessions in each comparison window."
+    },
+    {
+      "origin": "baseline",
+      "service": "analytics",
+      "source": {
+        "record": {
+          "row_id": "gas_fcd7f18498ee7811532e",
+          "table": "sessions"
+        }
+      },
+      "why": "Unchanged original organic destination bucket, included in the later effective total and used for native row conventions."
+    },
+    {
+      "origin": "baseline",
+      "service": "analytics",
+      "source": {
+        "record": {
+          "page_id": "page_461bcb4b5c832b23a874",
+          "table": "pages"
+        }
+      },
+      "why": "Explicit original ID, path, canonical URL, host and website linkage for the planning guide."
+    },
+    {
+      "origin": "baseline",
+      "service": "analytics",
+      "source": {
+        "record": {
+          "page_id": "page_c5f94d0ee3685462a4c3",
+          "table": "pages"
+        }
+      },
+      "why": "Explicit original ID and URL linkage for the destination guide."
+    },
+    {
+      "origin": "baseline",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "5098b8dd-d363-5a51-959b-f376ca3c522c",
+          "table": "issues"
+        }
+      },
+      "why": "Older unresolved renderer work remains open. It does not establish renewed public exposure or this guide's search outcome."
+    },
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790756089.454176"
+        }
+      },
+      "why": "Original email discussion grounds the new copy check and its reviewer."
+    },
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790787711.348082"
+        }
+      },
+      "why": "Original worksheet-label concern grounds the fresh revision."
+    },
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790672336.502073"
+        }
+      },
+      "why": "Original layout-caption exchange grounds the fresh matching-copy revision."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790870923.270099"
+        }
+      },
+      "why": "The apparent email request receives an explicit completed check."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790870981.653017"
+        }
+      },
+      "why": "The narrow worksheet-label concern is visibly handled."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790871053.994768"
+        }
+      },
+      "why": "The revised layout comparison has a specific owner confirmation."
+    }
+  ],
+  "meta": {
+    "build_ref": {
+      "build_id": "pagemantle-100e-30d-20261019-085526",
+      "manifest_sha256": "1d49f40665bdef2f8b7a1099ed799bcea1eee9e7c09828e2be86047e1da97e5e"
+    },
+    "config_ref": {
+      "sha256": "ba3dc80db7f523657f967b52a32488be999ec64c283b347dfcf75048e37a33ef",
+      "uri": "tasks/task-03/config.json"
+    },
+    "schema_version": 1,
+    "snapshot_time": "2026-10-01T16:15:41.313536+00:00",
+    "task_id": "task-03",
+    "version": 1
+  },
+  "notes": "The old planning-guide URL falls from eight web clicks to one, but the complete moved page group has 12 clicks in each comparison window. Impressions change from 1,301 to 1,386. Organic Search landing sessions remain 18, with nine engaged sessions in each window. The slight aggregate CTR decline and small counts do not establish lasting improvement or a causal effect.\n\nThe later calendar window includes the September 23 move date. It is not seven full days after a precisely timed move. Stored URL inspections and Felix's destination check support the current route. Inspection observations are not live checks, and crawl times do not establish observation dates. Preserve the Analytics thresholding qualifications.\n\nRachel has already reviewed the bounded evidence, kept the route and assigned the next routine review to Felix. Silence is appropriate unless accessible evidence contradicts that decision or reveals a separate unhandled problem. The older renderer issue remains unresolved and separate. The nearby email, worksheet and layout requests have explicit confirmations, without proving publication or completion of broader campaign work.",
+  "reference": {
+    "example_messages": [],
+    "important_mistakes": [
+      "Posting a warning or reopening the move from the old URL's decline alone.",
+      "Ignoring Rachel's completed review or Felix's existing monitoring ownership.",
+      "Treating small unchanged click and session totals as proof of lasting improvement.",
+      "Calling the comparison seven full days after the move or attributing the result causally to it.",
+      "Treating stored inspections as live checks or inferring observation dates from crawl times.",
+      "Claiming the older renderer issue is resolved.",
+      "Replying to the secondary copy requests after their explicit confirmations."
+    ],
+    "intent": "silence",
+    "reason": "No Slack message is needed. The two-page reports reconcile to 12 versus 12 Search Console web clicks, 1,301 versus 1,386 impressions, and 18 versus 18 Organic Search landing sessions with nine engaged sessions in each window. The old route alone falls from eight clicks to one, which explains Clara's chart. Dated inspections and Felix's destination check support the current route. Rachel has already reviewed this bounded evidence, kept the route and assigned the next routine review to Felix. Counts remain small and aggregate CTR declines slightly, so this supports the existing monitoring decision rather than a broad success claim. The secondary requests have visible completed responses. A new intervention remains defensible if accessible evidence contradicts this current decision or reveals a separate unhandled problem."
+  },
+  "scenario": "Clara reopens a saved report for the former planning-guide route after its planning section has moved into the practical guide. Her old-URL view declines, while the current Marketing review evaluates the complete moved group. Felix links that review from the fresh discussion. Nearby conversations show employees finishing small copy checks already raised in older threads."
+}

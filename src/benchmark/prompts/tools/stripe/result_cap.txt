@@ -1,0 +1,1 @@
+Results are limited to {max_result_bytes} bytes. An oversized result is unavailable evidence. Reduce page_size or narrow filters. Use next_cursor with the same filters and page_size to continue. Never treat an incomplete page as the full result.

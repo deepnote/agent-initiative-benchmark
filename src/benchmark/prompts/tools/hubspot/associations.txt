@@ -1,0 +1,1 @@
+Read associations whose two records are readable. Optional object_types selects the other endpoint types before counting and paging. Follow paging.next.after with the same filters. Supply association_id for an exact association. Use native endpoint types and IDs to navigate to linked records and their contract properties.

@@ -1,0 +1,1 @@
+Read a stored Calendar event by event_id and optional calendar_id, including permitted details and child records. For an expanded occurrence, this returns its stored series. Use the search occurrence times. Calendar is read-only.

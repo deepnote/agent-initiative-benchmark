@@ -1,0 +1,1 @@
+Positive page size, maximum {max_page_size}; default {default}. Keep it unchanged while paging.

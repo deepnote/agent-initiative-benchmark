@@ -1,0 +1,1 @@
+Immediately deliver exact text as a new top-level message to a readable non-archived channel or existing agent DM. Use slack_reply_to_thread for an existing discussion. Returns the successful message and ts, or a compact successful receipt if the full response exceeds the result cap. A compact receipt is a successful send: do not resend.

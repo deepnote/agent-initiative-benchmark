@@ -1,0 +1,1 @@
+When done, call submit_judgment on its own with the specified result. Otherwise continue with the supplied read tools.

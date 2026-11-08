@@ -1,0 +1,21 @@
+{
+  "agent_instructions": "Assess whether useful help is warranted. Use Slack messages when it is.",
+  "build_ref": {
+    "build_id": "example-build",
+    "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "judge_settings": {},
+  "limits": {},
+  "schema_version": 1,
+  "snapshot_time": "2026-09-30T12:00:00Z",
+  "storage": {},
+  "tool_scope": [
+    "slack_list_channels",
+    "slack_search_messages",
+    "slack_get_thread",
+    "slack_post_message",
+    "slack_reply_to_thread",
+    "slack_list_users",
+    "slack_send_dm"
+  ]
+}

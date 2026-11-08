@@ -1,0 +1,1 @@
+List visible historical Stripe billing events by event_type, object_type, object_id or creation time. Date bounds are exclusive timestamps with a timezone. Returns full stored event data, event time and paging. Historical event data can differ from current object state. Use stripe_get_object with table events for an exact event.

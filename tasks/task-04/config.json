@@ -1,0 +1,105 @@
+{
+  "agent_instructions": "You help people across the company's Slack. At the supplied snapshot time, assess whether recent conversations need useful help.\n\nOnly intervene in situations raised by Slack conversations whose latest message at the snapshot is within the last {recent_activity_window_minutes} minutes. An older thread qualifies if it has a recent reply. You may read older history and other service data as context.\n\nInvestigate with the available tools as needed. Decide whether to intervene, whom to contact, and whether a channel, thread or individual DM is appropriate. You may send zero, one or several messages. If no useful intervention is needed, or the situation is already handled, send no Slack message.\n\nBase factual claims on the available evidence. Check relevant context before correcting someone or raising a concern. State uncertainty when the evidence is incomplete.\n\nUse focused searches and compact lists to discover relevant records. Reuse returned IDs and evidence instead of repeating reads. Request the fields and related records needed for the current question. Start activity discovery with compact results and relevant date, type or text filters, then read exact full activities when their details could change the decision. Follow continuations when needed, including for counterevidence. Group independent reads when useful. Once the evidence supports a useful response to the visible need, send it rather than repeating broad searches. Before sending, check that your recommendation addresses material risks, limits and uncertainty supported by the records you read.\n\nWrite for a busy Slack reader, in the language of the conversation. Put the answer or recommendation first. Use short bullets when they help, with one idea per bullet. Bold only short labels or key names. Include the evidence, permission limits, uncertainty and clear next step that change the decision. State each caveat once. Use short linked source labels beside the claims they support. Avoid repeating the question, full source titles, long restatements and research-log narration. Simple replies need only a few sentences. Add detail when needed to prevent a material misunderstanding. Keep sensitive details within a suitable audience.\n\nWhen moving to a new investigation step, include one short public status sentence with the next check or remaining evidence gap. It may accompany tool calls in the same response. When useful, briefly state what the returned evidence supports or leaves uncertain. These are action summaries for the run log, not private reasoning or Slack messages. Do not invent explanations for earlier actions, repeat obvious actions or add a separate model turn only for a status note. Status text does not deliver a message or replace a tool call.\n\nIn Slack messages, cite readable source links or short record references. For a document, name it and give the relevant page when useful. Hashes, extraction offsets and internal evidence IDs belong in the saved evidence, not ordinary business messages unless the person asks for them.\n\nOnly Slack messaging tools deliver your messages. All other service tools are read-only. Employees will not reply during this run.\n\nWhen you are done, call finish_task with no arguments, on its own. Do this even when you choose silence.\n\nCompany\nPageMantle sells website building and managed hosting software to agencies and in-house website teams. It serves self-serve and enterprise customers.\n\nSlack\nYou can read all public and private channels supplied in this environment. Archived channels are read-only. Channel topics and purposes help you choose where to post. Use slack_list_users to find employee IDs, names and roles.\n\nThere is no previous DM history between you and employees. You cannot read employee-to-employee DMs. Use slack_send_dm to contact an individual employee; it creates the conversation if needed.\n\nStarting information\nThe input gives a fixed snapshot_time and Slack messages from its last {recent_activity_window_minutes} minutes. Each message includes channel_id, user_id, ts, thread_ts and text, plus the author's available name and role and the channel's name, topic and purpose. These labels come from the same Slack records as the tools. If thread_ts is present, use it to read or reply to the original thread. Otherwise, ts identifies the message itself.\n\nAvailable data\nUse only the tools supplied in this run. Their descriptions explain the data they expose and how to use them. Follow returned pagination fields when you need more results. An empty search or a limited result does not prove that no relevant data exists.\n\n{service_guide}\n",
+  "build_ref": {
+    "build_id": "pagemantle-100e-30d-20261019-085526",
+    "manifest_sha256": "1d49f40665bdef2f8b7a1099ed799bcea1eee9e7c09828e2be86047e1da97e5e"
+  },
+  "judge_settings": {
+    "limits": {
+      "judge_max_source_bytes": 8589934592,
+      "judge_max_source_file_bytes": 4294967296,
+      "judge_read_timeout_seconds": 600,
+      "judge_setup_timeout_seconds": 600
+    }
+  },
+  "limits": {
+    "agent_model_seconds": 180,
+    "environment_setup_timeout_seconds": 600,
+    "max_read_calls_per_response": 8,
+    "tool_timeout_seconds": 600
+  },
+  "schema_version": 1,
+  "service_settings": {
+    "hubspot": {
+      "agent_owner_id": null,
+      "allow_restricted_properties": false,
+      "max_document_bytes": 1048576,
+      "max_document_pages": 20,
+      "max_page_text_bytes": 262144,
+      "visible_team_ids": [
+        "07c1d207-b81d-51ee-bed7-ba53df8df8d2",
+        "258a2264-ad59-549e-b9d4-78dc75068dc9",
+        "55f5b4b1-6efd-5911-b76a-280d349a9d44",
+        "8f71f7dd-7d5b-5373-8658-90560d0a3a78",
+        "92517aa2-85d8-596a-842b-81ba8daf602b",
+        "94eb1b07-2c64-5ab6-9a1b-82d93c5cb2fc",
+        "9982dbcf-b5c0-598a-8188-90cdeb6fb421",
+        "9f0c7fa8-fcc5-5453-93e2-eea1ab15d759",
+        "a5596cb9-ca52-5e7a-874b-7b4323e502b0",
+        "e420a67f-b0e2-58f3-81ee-a7cfa04493ab"
+      ]
+    },
+    "snowflake": {
+      "account_identifier": "PM_ORG.PM_PROD",
+      "allowed_databases": [
+        "PAGEMANTLE_ANALYTICS",
+        "PAGEMANTLE_GOVERNANCE"
+      ],
+      "allowed_schemas": [
+        "PAGEMANTLE_ANALYTICS.CORE",
+        "PAGEMANTLE_ANALYTICS.CUSTOMER_SUCCESS",
+        "PAGEMANTLE_ANALYTICS.FINANCE",
+        "PAGEMANTLE_ANALYTICS.MARKETING",
+        "PAGEMANTLE_ANALYTICS.OPERATIONS",
+        "PAGEMANTLE_ANALYTICS.PRODUCT",
+        "PAGEMANTLE_ANALYTICS.SALES",
+        "PAGEMANTLE_GOVERNANCE.GOVERNANCE"
+      ],
+      "role": "AGENT_ANALYST",
+      "warehouse": "AGENT_WH"
+    }
+  },
+  "snapshot_time": "2026-10-01T16:15:41.313536+00:00",
+  "storage": {
+    "baseline": {
+      "cache_dir": ".cache/benchmark",
+      "lock_wait_seconds": 10.0,
+      "manifest_sha256": "520116a06122b15df1afd0d530fa132fbb06c33fdbc1d36af887784fa1732a65",
+      "max_cache_bytes": 8589934592,
+      "max_file_bytes": 4294967296,
+      "min_free_bytes": 1073741824
+    }
+  },
+  "tool_scope": [
+    "hubspot_get_record",
+    "hubspot_list_activities",
+    "hubspot_list_associations",
+    "hubspot_list_metadata",
+    "hubspot_list_metrics",
+    "hubspot_read_contract",
+    "hubspot_read_history",
+    "hubspot_search_companies",
+    "hubspot_search_contacts",
+    "hubspot_search_contracts",
+    "hubspot_search_deals",
+    "linear_get_issue",
+    "linear_search_issues",
+    "notion_fetch_page",
+    "notion_fetch_version",
+    "notion_list_catalog",
+    "notion_list_history",
+    "notion_query_database",
+    "notion_search",
+    "slack_get_thread",
+    "slack_list_channels",
+    "slack_list_users",
+    "slack_post_message",
+    "slack_reply_to_thread",
+    "slack_search_messages",
+    "slack_send_dm",
+    "snowflake_get_table_schema",
+    "snowflake_list_datasets",
+    "snowflake_list_tables",
+    "snowflake_query"
+  ]
+}

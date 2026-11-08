@@ -1,0 +1,1 @@
+Search readable Calendar events in a bounded time_min/time_max window with UTC offsets. Results include supported recurring occurrences and stored exceptions. Continue with next_cursor. Private details stay hidden. Unsupported recurrence or limits return an error, never complete availability.

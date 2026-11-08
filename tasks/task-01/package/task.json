@@ -1,0 +1,288 @@
+{
+  "brief": {
+    "ideal_action": "Find the original PostHog insight and matching BigQuery event records that support the specific observation. State the scope and limits plainly and reply in the original discussion. Reject similar but differently scoped summaries.",
+    "intent": "action",
+    "situation": "A product team is reusing an older adoption summary in a customer-facing explanation. The summary has lost the link to the actual observation behind it. Several similar saved insights exist, with different populations and time windows. The useful contribution is to locate the original supporting records and restore their context, rather than calculate a new trend.",
+    "task_id": "task-01"
+  },
+  "changes": [
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Localization evidence and the current product-copy discussion.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C97A2955FAF5C46C0",
+          "ts": "1788973963.482173"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Localization evidence and the current product-copy discussion.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C2B84A55F7DD4E5A4",
+          "ts": "1789061839.716284"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Localization evidence and the current product-copy discussion.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790817018.158172"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Localization evidence and the current product-copy discussion.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790817112.850502"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Localization evidence and the current product-copy discussion.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C97A2955FAF5C46C0",
+          "ts": "1790817192.571020"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Localization evidence and the current product-copy discussion.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C97A2955FAF5C46C0",
+          "ts": "1790817251.107034"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Localization evidence and the current product-copy discussion.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C2B84A55F7DD4E5A4",
+          "ts": "1790817370.079902"
+        }
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C2B84A55F7DD4E5A4",
+          "ts": "1790817370.079902"
+        }
+      },
+      "why": "Priya is reusing the historical line for a customer explanation and lacks its original observational context. The eligible reply belongs in this discussion."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C2B84A55F7DD4E5A4",
+          "ts": "1789061839.716284"
+        }
+      },
+      "why": "The derivative sentence identifies Alex's previous-day localization readout as its source but broadens a specific example into language about enterprise teams."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C97A2955FAF5C46C0",
+          "ts": "1788973963.482173"
+        }
+      },
+      "why": "The dated readout identifies the saved insight and the site, date and five-minute observation window needed for bounded native discovery."
+    },
+    {
+      "origin": "baseline",
+      "service": "posthog",
+      "source": {
+        "record": {
+          "id": "55a0f90c-f0d3-504f-ae18-f8cbf87e80b3",
+          "table": "insights"
+        }
+      },
+      "why": "The saved insight identifies Enabled Localization Through Locale Publication, its enterprise filter, stages, date range and modification context. It is the view named by the historical note."
+    },
+    {
+      "origin": "baseline",
+      "service": "posthog",
+      "source": {
+        "record": {
+          "event_uuid": "ph_372eefdedcf8d6ed6fce272b",
+          "table": "events"
+        }
+      },
+      "why": "The complete native event records localization setup at 2026-09-08 16:21:18 UTC on Oakmarsh Retail Events, with de-DE and fr-FR as targets."
+    },
+    {
+      "origin": "baseline",
+      "service": "posthog",
+      "source": {
+        "record": {
+          "event_uuid": "ph_112b475516c990923bacfe6d",
+          "table": "events"
+        }
+      },
+      "why": "The complete native event records a successful fr-FR publication at 16:22:37 UTC. Its workspace, website, person and session match the setup event, while its page ID differs."
+    },
+    {
+      "origin": "baseline",
+      "service": "bigquery",
+      "source": {
+        "query": {
+          "query": "SELECT event_id,event_timestamp,received_at,customer_id,event_name,workspace_id,website_id,session_id,success,json_extract_string(properties_json,'$.page_id') AS page_id,json_extract_string(properties_json,'$.locale') AS locale,json_extract(properties_json,'$.target_locales') AS target_locales,json_extract_string(properties_json,'$.terminal_status') AS terminal_status FROM product_events.events WHERE event_date = DATE '2026-09-08' AND website_id = '77f52506-c764-5d2c-9365-1f544c8f815f' AND event_timestamp >= TIMESTAMP '2026-09-08 16:20:00' AND event_timestamp < TIMESTAMP '2026-09-08 16:25:00' AND event_name IN ('localization_enabled','locale_published') ORDER BY event_timestamp,event_id"
+        }
+      },
+      "why": "This successful native query returns exactly the two matching warehouse events. event_id equals the PostHog event_uuid. Both were received at 19:27:04 UTC, after their occurrence and before the historical note."
+    },
+    {
+      "origin": "baseline",
+      "service": "posthog",
+      "source": {
+        "record": {
+          "id": "75e69bb0-19bf-550e-a121-df894ed1e9be",
+          "table": "insights"
+        }
+      },
+      "why": "The similarly named Localization Enabled to Locale Published has no population filter and a different starting date. Its identical stored totals do not establish that it was the source of Alex's observation."
+    },
+    {
+      "origin": "baseline",
+      "service": "posthog",
+      "source": {
+        "record": {
+          "id": "f97b21d5-bb92-5216-a804-b0697ffec187",
+          "table": "insights"
+        }
+      },
+      "why": "Localization Enablement to Published Locale filters to self-serve and has another date range. It is a plausible title match with the wrong population."
+    },
+    {
+      "origin": "baseline",
+      "service": "posthog",
+      "source": {
+        "record": {
+          "event_uuid": "ph_10e8a705e1520c11b02c7f4d",
+          "table": "events"
+        }
+      },
+      "why": "The later Oakmarsh publish failure concerns the Help Center website on September 16. It must not be silently closed or conflated with the September 8 Events-site observation."
+    },
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C97A2955FAF5C46C0",
+          "ts": "1788283414.567344"
+        }
+      },
+      "why": "The complete thread establishes that the similarly topical missing-translation discussion is a query sketch, not empirical adoption evidence."
+    },
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C97A2955FAF5C46C0",
+          "ts": "1788765104.207388"
+        }
+      },
+      "why": "The complete thread contains Owen's existing answer to a hand-built traffic fixture. The fresh follow-up requires no further calculation or intervention."
+    },
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790787711.348082"
+        }
+      },
+      "why": "Aaron's original copy note provides the concrete context for the fresh worksheet revision and acknowledgement."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C682034315B5046CD",
+          "ts": "1790817112.850502"
+        }
+      },
+      "why": "The apparent secondary copy request is visibly answered by its original author."
+    }
+  ],
+  "meta": {
+    "build_ref": {
+      "build_id": "pagemantle-100e-30d-20261019-085526",
+      "manifest_sha256": "1d49f40665bdef2f8b7a1099ed799bcea1eee9e7c09828e2be86047e1da97e5e"
+    },
+    "config_ref": {
+      "sha256": "6cc3b58ab0a798746b27d7999735c07ea16ef4454cdd0c11c509fca1e6aea019",
+      "uri": "tasks/task-01/config.json"
+    },
+    "schema_version": 1,
+    "snapshot_time": "2026-10-01T01:17:57.804308+00:00",
+    "task_id": "task-01",
+    "version": 1
+  },
+  "notes": "Priya needs the source behind a localization sentence before reusing it in customer-facing copy. Alex's September 9 readout identifies the enterprise saved insight and a September 8 observation on Oakmarsh Retail Events between 16:20 and 16:25 UTC. The general and self-serve funnels have similar titles and cached totals, but different populations and time windows.\n\nMatch PostHog event_uuid to BigQuery event_id, with event time, website, workspace and session as corroboration. source_event_id is not unique. The setup event lists German and French targets. The successful publication establishes French only, and the two events have different page IDs. This supports a bounded example, not a same-page conversion, an adoption rate, growth, duration or causation.\n\nThe saved insights have last_refreshed_at 2026-10-01T06:59:59Z, after the task snapshot. Their cached totals are not an as-of-snapshot observation. The enterprise view was modified after Alex's note, and its September 9 chart version is unavailable. The dated events independently support the narrow observation. The later Help Center failure concerns a different website and has no established recovery.\n\nReply in the product-copy thread so Priya and Rachel can correct the explanation together. Give readable source references and the scope limits. Do not contact the customer or promise publication. The worksheet request has an explicit acknowledgement. The nearby query and traffic examples do not need another intervention. Equivalent evidence-backed wording and a short split reply are acceptable.",
+  "reference": {
+    "example_messages": [
+      {
+        "destination": {
+          "channel_id": "C2B84A55F7DD4E5A4",
+          "kind": "thread",
+          "thread_ts": "1789061839.716284"
+        },
+        "text": "Found the source in Alex\u2019s September 9 readout in #data. He used \u201cEnabled Localization Through Locale Publication,\u201d saved insight 55a0f90c-f0d3-504f-ae18-f8cbf87e80b3, and spot-checked Oakmarsh Retail Events on September 8, 16:20\u201316:25 UTC.\n\nPostHog events ph_372eefdedcf8d6ed6fce272b and ph_112b475516c990923bacfe6d match the same event_id rows in product_events.events. Setup at 16:21:18 listed German and French targets. A successful French publication followed at 16:22:37 in the same site and session.\n\nThat supports a specific example of localization use. The page IDs differ, so it does not establish a single-page conversion, both languages being published, or enterprise adoption generally. The broader month-end funnel is a different scope, and the saved view has changed since Alex\u2019s note. I\u2019d narrow the customer wording to the observed example and retain these source references."
+      }
+    ],
+    "important_mistakes": [
+      "Substituting the unfiltered or self-serve insight for the saved enterprise view identified by the source note.",
+      "Using equal cached totals as proof of source identity, or treating a refresh timestamp later than the fixed snapshot as evidence available at that clock.",
+      "Presenting the spot check as an enterprise adoption rate, a growth trend, a typical completion time or a causal effect.",
+      "Claiming that the two events concern the same page or prove publication of both configured target locales.",
+      "Joining services using the nonunique source_event_id instead of matching native event_uuid and event_id with corroborating scope fields.",
+      "Inventing recovery of the later Help Center failure or treating it as the same website and observation.",
+      "Answering only in a different channel, contacting the customer, or overlooking the visible acknowledgement that handles the worksheet request."
+    ],
+    "intent": "action",
+    "reason": "Priya is about to reuse a broadened summary in customer-facing draft copy and lacks its source context. A useful thread reply recovers the original saved-view identity, verifies the precise observation against unchanged PostHog and warehouse records, and offers appropriately narrow wording. Exact phrasing and exhaustive raw IDs are unnecessary. Material uncertainty about the historical saved chart and the limited observation must remain visible."
+  },
+  "scenario": "A September localization spot check was shortened into product copy about enterprise adoption. Priya is now reusing that sentence in a customer explanation, while its working citation leads to a general month-end funnel. Recover the source and its limits amid similarly named saved analyses and ordinary, already handled Slack work."
+}

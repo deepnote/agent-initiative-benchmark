@@ -1,0 +1,1 @@
+Nonempty search text and supported filters. All terms must match; quoted text is a literal phrase.

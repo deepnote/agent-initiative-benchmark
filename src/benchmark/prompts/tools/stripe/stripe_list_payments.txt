@@ -1,0 +1,1 @@
+List visible Stripe PaymentIntents by customer, invoice, status or creation time. Date bounds are exclusive timestamps with a timezone. Returns a page with payment failures and refunds. refunds_has_more marks an incomplete nested refund list. Continue with stripe_list_objects for refunds.

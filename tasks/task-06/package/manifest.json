@@ -1,0 +1,38 @@
+{
+  "build_ref": {
+    "build_id": "pagemantle-100e-30d-20261019-085526",
+    "manifest_sha256": "1d49f40665bdef2f8b7a1099ed799bcea1eee9e7c09828e2be86047e1da97e5e"
+  },
+  "config_ref": {
+    "sha256": "b45942de054ba0354faf2d602f5232bfe5862594415d43ee5181d7cea14632c2",
+    "uri": "tasks/task-06/config.json"
+  },
+  "files": [
+    {
+      "bytes": 4617,
+      "path": "delta/hubspot/seed.json",
+      "sha256": "0a49ee65ed59caa09ec443b0d08fe66a3ebc42079bf5a4490cecd1046bd8f323"
+    },
+    {
+      "bytes": 13089,
+      "path": "delta/linear/seed.json",
+      "sha256": "3eec0ccb311fcd1eb52fadc00a1cee6b2c2f2a1421c8eb42a3161a62678f5336"
+    },
+    {
+      "bytes": 2675,
+      "path": "delta/notion/seed.json",
+      "sha256": "abc6dbdaae39a590e1f301dc54726c74f306a10c54850f7445f5ce595cb12cd0"
+    },
+    {
+      "bytes": 3404,
+      "path": "delta/slack/seed.json",
+      "sha256": "8e25f776c826e09688f81f297a1cc568294c6f362b0a82f3c303d08205a62c5b"
+    },
+    {
+      "bytes": 23609,
+      "path": "task.json",
+      "sha256": "e5a1ea54d0fcfc92706a20339b4e08b21a9a8bcd0874ed86da2d69573c857dbc"
+    }
+  ],
+  "schema_version": 1
+}

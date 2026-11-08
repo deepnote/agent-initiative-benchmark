@@ -1,0 +1,1 @@
+Get one visible Stripe record by exact table and object_id. Tables are customers, products, prices, subscriptions, invoices, payments, refunds and events. Returns complete stored fields. Events contain historical data. Other tables contain current object state.

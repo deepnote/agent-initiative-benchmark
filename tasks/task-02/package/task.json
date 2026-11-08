@@ -1,0 +1,313 @@
+{
+  "brief": {
+    "ideal_action": "Explain the normal billing-change sequence, its effective condition and the relevant exception using the governing Notion process and Stripe lifecycle records. Separate confirmation, effective change and invoicing. Give a short practical example in the original thread without making an unsupported customer promise.",
+    "intent": "action",
+    "situation": "A team is discussing a subscription change as if confirming it immediately changes every invoice and entitlement. The governing process has normal stages and a meaningful exception. Notion explains the process, while Stripe subscription schedules and invoice records show the stages in a concrete customer case. The useful contribution is a plain explanation of what happens when.",
+    "task_id": "task-02"
+  },
+  "changes": [
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Billing handoff and acknowledged copy discussions.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790816835.654943"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Billing handoff and acknowledged copy discussions.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790816885.689415"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Billing handoff and acknowledged copy discussions.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C65AB5761AE9DABE0",
+          "ts": "1790816968.670107"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Billing handoff and acknowledged copy discussions.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C65AB5761AE9DABE0",
+          "ts": "1790817025.676960"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Billing handoff and acknowledged copy discussions.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C2B84A55F7DD4E5A4",
+          "ts": "1790817095.381461"
+        }
+      }
+    },
+    {
+      "file": "delta/notion/seed.json",
+      "operation": "add",
+      "reason": "Subscription-change procedure, conditions and payment exception.",
+      "service": "notion",
+      "source": {
+        "record": {
+          "id": "f86cc2b2-0a46-4eb0-b88a-23cb48f40257",
+          "table": "pages"
+        }
+      }
+    },
+    {
+      "file": "delta/stripe/seed.json",
+      "operation": "replace",
+      "reason": "Scheduled billing-change state and its invoice relationship.",
+      "service": "stripe",
+      "source": {
+        "record": {
+          "id": "sub_1331af77a42211669eee9532",
+          "table": "subscriptions"
+        }
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C65AB5761AE9DABE0",
+          "ts": "1789392472.554291"
+        }
+      },
+      "why": "Original unfinished plan-change explanation and the thread where the useful contribution belongs."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C65AB5761AE9DABE0",
+          "ts": "1790816968.670107"
+        }
+      },
+      "why": "Fresh unprompted Support handoff update states the misleading wording Brian intends to use and his reasoning from the concrete customer's paid invoice."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C65AB5761AE9DABE0",
+          "ts": "1790817025.676960"
+        }
+      },
+      "why": "Shows the mistaken interpretation extending from billing confirmation to existing invoices and account-wide access."
+    },
+    {
+      "origin": "delta",
+      "service": "notion",
+      "source": {
+        "record": {
+          "id": "f86cc2b2-0a46-4eb0-b88a-23cb48f40257",
+          "table": "pages"
+        }
+      },
+      "why": "Governs the normal period-boundary sequence and the immediate payment-gated exception."
+    },
+    {
+      "origin": "baseline",
+      "service": "notion",
+      "source": {
+        "record": {
+          "id": "b3253b4e-902d-59e9-85d1-b62bb179863b",
+          "table": "pages"
+        }
+      },
+      "why": "Original authority on accepted terms, subscription settings and period-specific invoices."
+    },
+    {
+      "origin": "baseline",
+      "service": "notion",
+      "source": {
+        "record": {
+          "id": "ab892350-cd42-5366-a551-2424bc48def8",
+          "table": "pages"
+        }
+      },
+      "why": "Original boundary guidance prevents treating Stripe billing state as proof of workspace provisioning or membership."
+    },
+    {
+      "origin": "baseline",
+      "service": "stripe",
+      "source": {
+        "record": {
+          "id": "fdb67d3d-06ae-59f4-ab59-41dd03cce7e6",
+          "table": "customers"
+        }
+      },
+      "why": "Resolves the full customer name to its billing identity. A broader Winterridge search returns three distinct customers."
+    },
+    {
+      "origin": "delta",
+      "service": "stripe",
+      "source": {
+        "record": {
+          "id": "sub_1331af77a42211669eee9532",
+          "table": "subscriptions"
+        }
+      },
+      "why": "Preserves original current billing state and adds the retained confirmation, phase and application dates for the downgrade."
+    },
+    {
+      "origin": "baseline",
+      "service": "stripe",
+      "source": {
+        "record": {
+          "id": "in_736b302b8f3b150f175dd0ac",
+          "table": "invoices"
+        }
+      },
+      "why": "Original USD 200 paid invoice for September 4 through the October 4 exclusive boundary, with plan_downgrade metadata."
+    },
+    {
+      "origin": "baseline",
+      "service": "stripe",
+      "source": {
+        "record": {
+          "id": "evt_d5931ca5e5c4e0df872b49fc",
+          "table": "events"
+        }
+      },
+      "why": "Original invoice.finalized event shows the invoice open and unpaid at September 4 00:00 UTC."
+    },
+    {
+      "origin": "baseline",
+      "service": "stripe",
+      "source": {
+        "record": {
+          "id": "evt_470769d77275ff5ebd183553",
+          "table": "events"
+        }
+      },
+      "why": "Original invoice.updated event shows payment at September 4 02:00 UTC. Today's paid state does not collapse the earlier stages."
+    },
+    {
+      "origin": "baseline",
+      "service": "stripe",
+      "source": {
+        "record": {
+          "id": "pi_50369e1fff99fb21b654988c",
+          "table": "payments"
+        }
+      },
+      "why": "Original successful PaymentIntent corroborates the USD 200 settlement and exact invoice association."
+    },
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790784000.814042"
+        }
+      },
+      "why": "The complete original thread already contains Robert's answer about payment initiation versus settlement."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790816885.689415"
+        }
+      },
+      "why": "Finance accepts the revised illustrative caption. Another explanation would add little."
+    },
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C2B84A55F7DD4E5A4",
+          "ts": "1790617474.002712"
+        }
+      },
+      "why": "The original Client Review thread supplies the wording question and Priya's authority to settle it."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C2B84A55F7DD4E5A4",
+          "ts": "1790817095.381461"
+        }
+      },
+      "why": "The label decision is visibly handled. Notification behavior remains outside that decision rather than being falsely closed."
+    }
+  ],
+  "meta": {
+    "build_ref": {
+      "build_id": "pagemantle-100e-30d-20261019-085526",
+      "manifest_sha256": "1d49f40665bdef2f8b7a1099ed799bcea1eee9e7c09828e2be86047e1da97e5e"
+    },
+    "config_ref": {
+      "sha256": "d52bc800bfc7c83be73641a45f28a7325a0503d7e2a44b456f04f1ac73b4951b",
+      "uri": "tasks/task-02/config.json"
+    },
+    "schema_version": 1,
+    "snapshot_time": "2026-10-01T01:13:43.470389+00:00",
+    "task_id": "task-02",
+    "version": 1
+  },
+  "notes": "Brian intends to reuse a billing explanation, and Jonah agrees with its mistaken implication that confirmation immediately changes billing and access across the account. Neither asks for review. The useful contribution is an unsolicited process explanation in the existing self-serve billing thread.\n\nNormally, confirmation records an instruction. The scheduled change applies at the period boundary if its schedule is still current. Invoice finalization and payment are separate events, and confirming a later change does not rewrite a finalized invoice. The relevant exception is an immediate payment-gated upgrade, which can be invoiced before successful payment and application of a pending update.\n\nWinterridge's confirmation is dated September 3. The downgrade applied September 4 at 00:00 UTC. Its USD 200 invoice was finalized open at that boundary and paid at 02:00 UTC. Do not invent a subsecond order between application and finalization. The current paid status does not collapse the sequence into one event. Schedule details are retained in supported subscription metadata, not exposed as a native Stripe Schedule resource. The confirmation predates creation of the resulting subscription and does not establish an earlier subscription or former price.\n\nBilling records do not prove changes to every workspace entitlement or accepted commercial terms. Explain the controlling condition, exception and evidence limits with a short dated example. A shorter grounded correction or direct follow-up to Brian or Jonah is valid. The caption and product-label discussions have visible answers, without establishing settlement or notification delivery.",
+  "reference": {
+    "example_messages": [
+      {
+        "destination": {
+          "channel_id": "C65AB5761AE9DABE0",
+          "kind": "thread",
+          "thread_ts": "1789392472.554291"
+        },
+        "text": "I'd change that wording. Normally, confirmation records the instruction. The new billing setting takes effect when its scheduled period starts, provided that schedule is still current. The invoice covers its own period, and an already-finalized invoice isn't rewritten by confirming a later change.\n\nThe [procedure](notion://page/f86cc2b2-0a46-4eb0-b88a-23cb48f40257) has one relevant exception: an immediate payment-gated upgrade can be invoiced first, then take effect after successful payment and application of the pending update.\n\nWinterridge's September downgrade used the normal path. Confirmation was recorded September 3. The schedule applied September 4 at 00:00 UTC. Invoice PM-736B302B8F3B was finalized open at that boundary for USD 200, then paid at 02:00 UTC. Its paid status now doesn't make those one event.\n\nI'd also leave account-wide access out of this promise. [Billing integration](notion://page/ab892350-cd42-5366-a551-2424bc48def8) requires separate product and membership evidence."
+      }
+    ],
+    "important_mistakes": [
+      "Equate confirmation, application, invoice finalization and payment.",
+      "Apply the payment-gated upgrade exception to Winterridge's period-boundary downgrade.",
+      "Promise that existing invoices, prices or every workspace entitlement changed.",
+      "Invent the previous plan, an earlier invoice correction, a credit or accepted commercial terms.",
+      "Treat the metadata as proof of an accessible native Stripe Schedule resource.",
+      "Give only a status report or a long record dump instead of explaining the sequence.",
+      "Reply only outside the original self-serve billing thread.",
+      "Reopen the handled caption or label discussions, or claim their separate uncertainties were resolved.",
+      "Describe Brian's update as a request for review or wait for an explicit question despite the visible handoff misconception."
+    ],
+    "intent": "action",
+    "reason": "Brian states that he intends to reuse a misleading explanation, and Jonah's unprompted agreement extends the misconception. Neither requests a check. The implicit need is a bounded process explanation, supported by the procedure and original invoice lifecycle, before this wording is reused. Exact wording is flexible. The useful contribution is the sequence, controlling condition, exception and practical example, delivered in the original thread without promising a customer outcome. A shorter grounded correction or direct follow-up to Brian or Jonah is also justified when it preserves the limits of its evidence."
+  },
+  "scenario": "Support is revisiting an older plan-change explanation for a handoff. Brian states the wording he intends to use, without requesting review, and assumes Winterridge Acornbank Consulting's currently paid September downgrade invoice validates immediate activation on confirmation. Jonah independently agrees and extends that interpretation to existing bills and access across the account. The original invoice history separates finalization from settlement. Retained operational schedule metadata supplies the confirmation and application dates. The governing procedure explains period-boundary changes and the distinct payment-gated upgrade exception. Nearby fresh conversations show an accepted caption correction and a settled product-label decision."
+}
