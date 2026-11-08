@@ -1,0 +1,6 @@
+{
+  "snowflake_list_datasets": "List permitted Snowflake databases and schemas. Follow next_cursor with start_cursor.",
+  "snowflake_list_tables": "List permitted Snowflake tables, views and stored models in a database, optionally within one schema. Follow next_cursor with start_cursor.",
+  "snowflake_get_table_schema": "Read one permitted Snowflake object's native fields, descriptions, primary key, business date and refresh meaning.",
+  "snowflake_query": "Run one bounded read-only SELECT or WITH query over permitted database.schema.table names. Joins and aggregates use the complete effective stored rows. Task rows replace matching native primary keys before queries. Check truncated. If true, narrow filters or aggregate. There is no continuation cursor. File functions, system tables, writes and extension access are unavailable."
+}

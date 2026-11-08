@@ -1,0 +1,7 @@
+{
+  "provider": "responses",
+  "endpoint": "https://api.openai.com/v1/responses",
+  "model_id": "your-model-id",
+  "api_key_env": "MODEL_API_KEY",
+  "max_output_tokens": 16384
+}

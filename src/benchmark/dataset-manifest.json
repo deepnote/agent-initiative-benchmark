@@ -1,0 +1,127 @@
+{
+  "archive_bytes": 5966792711,
+  "file_count": 101337,
+  "file_index": {
+    "path": "file-index.jsonl.gz",
+    "sha256": "0c6e56041d2bd2bdcda45d722bb216b603ba7edf2535d85fd1fbed79d56c7b3a"
+  },
+  "license": "CC-BY-4.0",
+  "packages": [
+    {
+      "extraction_root": ".",
+      "file_count": 134,
+      "path": "data/analytics.tar.gz",
+      "service": "analytics",
+      "sha256": "8765ac3980dbdb6c9240378b7fcf623f5aed31c3506d347b6c2e58339bad585a",
+      "size_bytes": 7081628,
+      "unpacked_bytes": 8248043,
+      "verification": "all_extracted_file_sha256_match"
+    },
+    {
+      "extraction_root": ".",
+      "file_count": 17860,
+      "path": "data/bigquery.tar.gz",
+      "service": "bigquery",
+      "sha256": "f3b14ae014eabbc75d37cd9cd5c29e52d68adc79690b978bb1b4970fba9408df",
+      "size_bytes": 2377608091,
+      "unpacked_bytes": 2920672196,
+      "verification": "all_extracted_file_sha256_match"
+    },
+    {
+      "extraction_root": ".",
+      "file_count": 2,
+      "path": "data/calendar.tar.gz",
+      "service": "calendar",
+      "sha256": "6845a7468c700859f19ac976fa74890bd0192c0a9622d449084a30531ab7ada2",
+      "size_bytes": 3017692,
+      "unpacked_bytes": 17261108,
+      "verification": "all_extracted_file_sha256_match"
+    },
+    {
+      "extraction_root": ".",
+      "file_count": 266,
+      "path": "data/hubspot.tar.gz",
+      "service": "hubspot",
+      "sha256": "c03894653517d3181f0fae3f5f6d7b4cc13bf676d58f3122d5501ab5aced4baa",
+      "size_bytes": 867864138,
+      "unpacked_bytes": 3378870033,
+      "verification": "all_extracted_file_sha256_match"
+    },
+    {
+      "extraction_root": ".",
+      "file_count": 2,
+      "path": "data/linear.tar.gz",
+      "service": "linear",
+      "sha256": "65b31be1e7fd069b13aab485e9dc27110eb4d6bde2cc01da4d82af5345a359d4",
+      "size_bytes": 343869,
+      "unpacked_bytes": 1241524,
+      "verification": "all_extracted_file_sha256_match"
+    },
+    {
+      "extraction_root": ".",
+      "file_count": 846,
+      "path": "data/notion.tar.gz",
+      "service": "notion",
+      "sha256": "f2c00fdc802a55f1064c1c5c4bb03a1ea821312889d920b032e43af798f20f66",
+      "size_bytes": 52813664,
+      "unpacked_bytes": 101441004,
+      "verification": "all_extracted_file_sha256_match"
+    },
+    {
+      "extraction_root": ".",
+      "file_count": 41,
+      "path": "data/posthog.tar.gz",
+      "service": "posthog",
+      "sha256": "a0a63e9d19ffd4e85a02596649fdc931bdecb29bdcdf78c143da2d804c6eba4d",
+      "size_bytes": 1668683386,
+      "unpacked_bytes": 1692127047,
+      "verification": "all_extracted_file_sha256_match"
+    },
+    {
+      "extraction_root": ".",
+      "file_count": 101,
+      "path": "data/search_console.tar.gz",
+      "service": "search_console",
+      "sha256": "e790a8ec1b10d3474433c2795c98634acaaeca6b8354b18fa9adf8373a1b7b9c",
+      "size_bytes": 5264866,
+      "unpacked_bytes": 7722687,
+      "verification": "all_extracted_file_sha256_match"
+    },
+    {
+      "extraction_root": ".",
+      "file_count": 29,
+      "path": "data/slack.tar.gz",
+      "service": "slack",
+      "sha256": "6610b45d916534d3aee8aa79b103a0b05d9f04de6c7aafca2258642f9d506532",
+      "size_bytes": 1102366,
+      "unpacked_bytes": 1134101,
+      "verification": "all_extracted_file_sha256_match"
+    },
+    {
+      "extraction_root": ".",
+      "file_count": 82054,
+      "path": "data/snowflake.tar.gz",
+      "service": "snowflake",
+      "sha256": "b73459b1c2496165867de0d58f2a6609dd3d657f549de7eaf12aa4e2683bcbfe",
+      "size_bytes": 957925622,
+      "unpacked_bytes": 1052882861,
+      "verification": "all_extracted_file_sha256_match"
+    },
+    {
+      "extraction_root": ".",
+      "file_count": 2,
+      "path": "data/stripe.tar.gz",
+      "service": "stripe",
+      "sha256": "d84f8520a217c86084e9dd09f7ab590e56c854694f266443ce584f4005112415",
+      "size_bytes": 25087389,
+      "unpacked_bytes": 923533806,
+      "verification": "all_extracted_file_sha256_match"
+    }
+  ],
+  "schema_version": 1,
+  "snapshot_date": "2026-09-30",
+  "source_snapshot_sha256": "1d49f40665bdef2f8b7a1099ed799bcea1eee9e7c09828e2be86047e1da97e5e",
+  "title": "PageMantle Company Dataset",
+  "unpacked_bytes": 10105134410,
+  "version": "1.0.0"
+}

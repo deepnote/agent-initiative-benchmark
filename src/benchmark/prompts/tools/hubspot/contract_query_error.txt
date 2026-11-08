@@ -1,0 +1,1 @@
+Use 1 to 12 word terms, or set match_mode=phrase for exact literal text.

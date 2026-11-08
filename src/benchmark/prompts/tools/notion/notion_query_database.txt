@@ -1,0 +1,1 @@
+Read Notion database rows with native property filters, sorts and paging. Rows include properties but no body. Use notion_fetch_page for bodies.

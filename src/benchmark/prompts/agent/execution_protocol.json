@@ -1,0 +1,12 @@
+{
+  "status": "Runtime status (machine-generated): model-response time configured {total} s, consumed {consumed} s, remaining {remaining} s. Charged time is awaited model API response time, including provider and network waits. Setup and tool execution are excluded.",
+  "grouping": "You may request up to {max_read_calls} independent read-only tool calls in one response. Calls run sequentially in response order. Business writes and finish_task each require a separate single-call response. A batch rejected in preflight executes no calls. A returned read error does not stop later reads. A tool timeout, cancellation or worker failure stops the attempt without retry.",
+  "invalid_arguments": "Arguments must be a valid JSON object with unique keys and finite values",
+  "schema_arguments": "Arguments must match the tool parameter schema. No calls in this response were executed.",
+  "finish_arguments": "finish_task requires no arguments",
+  "unknown_tool": "Unknown or disallowed tool",
+  "mixed_write": "No calls executed. Business writes require a separate single-call response.",
+  "batch_cap": "No calls executed. This response exceeds the configured read-call limit.",
+  "invalid_batch": "No calls executed because another call in this response failed preflight.",
+  "invalid_call_id": "No calls executed. Call IDs must be nonempty unique strings and must not repeat earlier call IDs."
+}

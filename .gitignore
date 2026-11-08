@@ -1,0 +1,13 @@
+.venv/
+.cache/
+results/
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+data/
+benchmark.json

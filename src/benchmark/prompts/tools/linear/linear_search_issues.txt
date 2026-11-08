@@ -1,0 +1,1 @@
+Search accessible issues by literal identifier, title or description terms, all of which must match. Empty query browses issues. Comments are not searched. Archived issues are excluded by default. Returns issues, total, has_more and next_cursor. Keep filters and page size unchanged while paging. Use returned catalog IDs for filters.

@@ -1,0 +1,7 @@
+{
+  "provider": "chat_completions",
+  "endpoint": "http://localhost:8000/v1/chat/completions",
+  "model_id": "your-model-id",
+  "api_key_env": "MODEL_API_KEY",
+  "max_output_tokens": 16384
+}

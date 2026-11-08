@@ -1,0 +1,1 @@
+ Result cap: {max_result_bytes} UTF-8 JSON bytes. Expected errors return ok=false, error and message. result_too_large on reads means narrow the request or reduce page size; an error is not empty success. An uncertain send must not be retried automatically.

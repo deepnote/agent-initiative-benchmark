@@ -1,0 +1,1 @@
+List stored page or database metadata, including parents and properties. Follow next_cursor to read all matching records. This does not read page bodies.

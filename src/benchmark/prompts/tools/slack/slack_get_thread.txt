@@ -1,0 +1,1 @@
+Read a Slack thread page in chronological order, including its root and replies. For a recent reply in an older thread use that reply's thread_ts as the root. Returns channel, thread_ts, messages, reply_count, has_more and next_cursor. reply_count covers the whole thread; the root appears only on the first page.

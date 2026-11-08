@@ -1,0 +1,670 @@
+{
+  "brief": {
+    "ideal_action": "Give a supported comparison and a practical next action or owner for each account. Check whether later evidence applies to the same customer case, release or page variant as an older summary or completed task. Separate account risk, engineering completion, expected approval requirements and customer-confirmed outcomes. State material uncertainty and allow a different order when the evidence supports it. Do not invent a numerical churn ranking or a live-site incident.",
+    "intent": "action",
+    "situation": "A Customer Success colleague is preparing a customer review for Redpoint Assurance, Juniperpeak Group and Ashland Group. They need to decide which account needs attention first and what the team should do next for each. Compare these three accounts using their current customer impact and remaining work. Evidence is in HubSpot company records and activities, Linear issues, Slack customer threads and a linked Notion test report.",
+    "task_id": "task-06"
+  },
+  "changes": [
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Customer case priorities and owned follow-ups.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C7FC302337748032D",
+          "ts": "1790860642.311000"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Customer case priorities and owned follow-ups.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C33B16742E0F0BF82",
+          "ts": "1790852535.432000"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Customer case priorities and owned follow-ups.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C0CDF6C4A28273CC2",
+          "ts": "1790870910.692727"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Customer case priorities and owned follow-ups.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C0CDF6C4A28273CC2",
+          "ts": "1790871002.619347"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Customer case priorities and owned follow-ups.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C4875E318B5ABF803",
+          "ts": "1790871108.572531"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Customer case priorities and owned follow-ups.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C0CDF6C4A28273CC2",
+          "ts": "1790871243.520916"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "replace",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "0a185868-6478-5dea-87b5-e4133878194a",
+          "table": "issues"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "replace",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "66161b25-2329-5058-989d-23349e13274c",
+          "table": "issues"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "c3170175-92d9-4e21-92de-771b697d93bb",
+          "table": "issues"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "6bc99aac-c15d-4eab-aaf1-0e715e67a019",
+          "table": "issues"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "19ab3b1d-c91e-477c-8c88-e75dca2b4c41",
+          "table": "comments"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "c728ca62-2e2a-4864-b9da-d60c3b6fa812",
+          "table": "comments"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "18e5db82-5be5-4b3f-bada-2d1e194f7cd2",
+          "table": "comments"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "d97ce35a-b91e-4c19-a49a-cd17f3d6e0e3",
+          "table": "comments"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "2ca6d53b-cf95-464e-89be-96c7a7959318",
+          "table": "comments"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "874470e0-8c2d-44db-b8d4-8a36ded96cf4",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "178089ea-1d0a-44c0-9766-c31e7ad5669a",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "cb2898d7-364c-46ec-89b9-1fc6161ae088",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "ad2a8692-a515-4eb1-969c-c47f13b3f8c3",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "34090e72-e43d-42d0-87d9-02910c52007a",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "255a859b-0d20-4d0b-8ff6-af330372aa82",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "216c7d12-3524-44cb-b864-90f6d0a14bb2",
+          "table": "relations"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Release approvals and proposal-selector outcomes.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "c4d4059f-7f32-472b-b3f0-8c330146e0ea",
+          "table": "relations"
+        }
+      }
+    },
+    {
+      "file": "delta/notion/seed.json",
+      "operation": "add",
+      "reason": "Ashland proposal members, exclusions and observed target sets.",
+      "service": "notion",
+      "source": {
+        "record": {
+          "id": "b87c58b1-5e82-4d49-99ad-a3d9cbf4b615",
+          "table": "pages"
+        }
+      }
+    },
+    {
+      "file": "delta/hubspot/seed.json",
+      "operation": "add",
+      "reason": "Account support state and dated customer confirmation.",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "id": "712cabd2-311e-47e9-b534-1cb4308ca62f",
+          "table": "activities"
+        }
+      }
+    },
+    {
+      "file": "delta/hubspot/seed.json",
+      "operation": "add",
+      "reason": "Account support state and dated customer confirmation.",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "activity_id": "712cabd2-311e-47e9-b534-1cb4308ca62f",
+          "association_type": "activity_to_company",
+          "object_type": "companies",
+          "record_id": "1aa1f158-4096-512b-8105-606ab20f1be7",
+          "table": "activity_associations"
+        }
+      }
+    },
+    {
+      "file": "delta/hubspot/seed.json",
+      "operation": "replace",
+      "reason": "Account support state and dated customer confirmation.",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "object_type": "companies",
+          "property_name": "notes",
+          "record_id": "1aa1f158-4096-512b-8105-606ab20f1be7",
+          "table": "property_values"
+        }
+      }
+    },
+    {
+      "file": "delta/hubspot/seed.json",
+      "operation": "replace",
+      "reason": "Account support state and dated customer confirmation.",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "object_type": "companies",
+          "property_name": "next_milestone",
+          "record_id": "1aa1f158-4096-512b-8105-606ab20f1be7",
+          "table": "property_values"
+        }
+      }
+    },
+    {
+      "file": "delta/hubspot/seed.json",
+      "operation": "replace",
+      "reason": "Account support state and dated customer confirmation.",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "object_type": "companies",
+          "property_name": "num_notes",
+          "record_id": "1aa1f158-4096-512b-8105-606ab20f1be7",
+          "table": "property_values"
+        }
+      }
+    },
+    {
+      "file": "delta/hubspot/seed.json",
+      "operation": "replace",
+      "reason": "Account support state and dated customer confirmation.",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "object_type": "companies",
+          "property_name": "last_activity_date",
+          "record_id": "1aa1f158-4096-512b-8105-606ab20f1be7",
+          "table": "property_values"
+        }
+      }
+    },
+    {
+      "file": "delta/hubspot/seed.json",
+      "operation": "replace",
+      "reason": "Account support state and dated customer confirmation.",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "object_type": "companies",
+          "property_name": "hs_last_sales_activity_timestamp",
+          "record_id": "1aa1f158-4096-512b-8105-606ab20f1be7",
+          "table": "property_values"
+        }
+      }
+    },
+    {
+      "file": "delta/hubspot/seed.json",
+      "operation": "replace",
+      "reason": "Account support state and dated customer confirmation.",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "object_type": "companies",
+          "property_name": "hs_last_sales_activity_type",
+          "record_id": "1aa1f158-4096-512b-8105-606ab20f1be7",
+          "table": "property_values"
+        }
+      }
+    },
+    {
+      "file": "delta/hubspot/seed.json",
+      "operation": "add",
+      "reason": "Account support state and dated customer confirmation.",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "id": "4df056bb-b92a-4c25-a455-27ac44918462",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/hubspot/seed.json",
+      "operation": "add",
+      "reason": "Account support state and dated customer confirmation.",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "id": "88dffea0-846a-4bf1-b126-263493166cb7",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/hubspot/seed.json",
+      "operation": "add",
+      "reason": "Account support state and dated customer confirmation.",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "id": "3bf780f4-aa59-4f24-891d-8a0588bf9324",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/hubspot/seed.json",
+      "operation": "replace",
+      "reason": "Account support state and dated customer confirmation.",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "id": "1aa1f158-4096-512b-8105-606ab20f1be7",
+          "table": "companies"
+        }
+      }
+    },
+    {
+      "file": "delta/hubspot/seed.json",
+      "operation": "replace",
+      "reason": "Account support state and dated customer confirmation.",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "object_type": "companies",
+          "property_name": "hs_lastmodifieddate",
+          "record_id": "1aa1f158-4096-512b-8105-606ab20f1be7",
+          "table": "property_values"
+        }
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "id": "1aa1f158-4096-512b-8105-606ab20f1be7",
+          "table": "companies"
+        }
+      },
+      "why": "Redpoint's dated risk context, current account note and approval milestone."
+    },
+    {
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "id": "712cabd2-311e-47e9-b534-1cb4308ca62f",
+          "table": "activities"
+        }
+      },
+      "why": "Lea's dated record of the customer's original-release confirmation and new approval follow-up."
+    },
+    {
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "0a185868-6478-5dea-87b5-e4133878194a",
+          "table": "issues"
+        }
+      },
+      "why": "The original Redpoint defect, local countercase, later review, deployment and bounded customer verification."
+    },
+    {
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "c3170175-92d9-4e21-92de-771b697d93bb",
+          "table": "issues"
+        }
+      },
+      "why": "The edited Redpoint release needs a separate named approval."
+    },
+    {
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C7FC302337748032D",
+          "ts": "1790860642.311000"
+        }
+      },
+      "why": "Hannah relays customer confirmation and the later changed-content request in the original customer conversation."
+    },
+    {
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "id": "dc448125-ad10-5783-821b-de9276b2cdec",
+          "table": "companies"
+        }
+      },
+      "why": "Ashland's account context and its one-response CSAT limit."
+    },
+    {
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "66161b25-2329-5058-989d-23349e13274c",
+          "table": "issues"
+        }
+      },
+      "why": "Ashland's original failure and completed older-proposal test."
+    },
+    {
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "6bc99aac-c15d-4eab-aaf1-0e715e67a019",
+          "table": "issues"
+        }
+      },
+      "why": "The open review for the later saved proposal."
+    },
+    {
+      "service": "notion",
+      "source": {
+        "record": {
+          "id": "b87c58b1-5e82-4d49-99ad-a3d9cbf4b615",
+          "table": "pages"
+        }
+      },
+      "why": "Raw current consumers, exclusions and observed preview targets make a membership check possible despite a passing count."
+    },
+    {
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C33B16742E0F0BF82",
+          "ts": "1790852535.432000"
+        }
+      },
+      "why": "Camille asks for customer confirmation of that same proposed preview."
+    },
+    {
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "id": "e7cdb6ac-211a-5c75-87b2-2da0594bc6af",
+          "table": "companies"
+        }
+      },
+      "why": "Juniperpeak's account context and open support count."
+    },
+    {
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "8965e1b6-28f4-59ec-824a-d5898c88de30",
+          "table": "issues"
+        }
+      },
+      "why": "The rejected proposal is still missing from the same-period customer report; the neighboring-period regression remains."
+    },
+    {
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "e4cceb3d-3c58-56f3-af03-8b29309e5a1b",
+          "table": "issues"
+        }
+      },
+      "why": "Completed ENGIN-10 is a distinct period-selection case."
+    },
+    {
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C5020A10B9C83F97C",
+          "ts": "1789984869.147718"
+        }
+      },
+      "why": "The Juniperpeak customer discussion limits the Activity Log workaround and leaves administrator verification open."
+    },
+    {
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "99f7effd-234b-5d2a-befb-d79a4bd7e453",
+          "table": "issues"
+        }
+      },
+      "why": "The Olivecoast side question has an established scope answer and no promised import date."
+    },
+    {
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "01c9122b-99fa-51bc-ae95-34a587b3e7dd",
+          "table": "issues"
+        }
+      },
+      "why": "Diego's runbook update has an identified owner and accepted engineering work."
+    }
+  ],
+  "meta": {
+    "build_ref": {
+      "build_id": "pagemantle-100e-30d-20261019-085526",
+      "manifest_sha256": "1d49f40665bdef2f8b7a1099ed799bcea1eee9e7c09828e2be86047e1da97e5e"
+    },
+    "config_ref": {
+      "sha256": "b45942de054ba0354faf2d602f5232bfe5862594415d43ee5181d7cea14632c2",
+      "uri": "tasks/task-06/config.json"
+    },
+    "schema_version": 1,
+    "snapshot_time": "2026-10-01T16:15:41.313536+00:00",
+    "task_id": "task-06",
+    "version": 1
+  },
+  "notes": "Compare the current customer states rather than ranking accounts by an older risk label alone. Evidence-backed alternative priorities are acceptable when they address each remaining action.\n\nRedpoint's original approved release worked after the revision-binding repair. Ada's later edited release has changed contents and needs new named approval. Do not reopen the original binding defect or treat approval of rev-approved as approval of rev-later-draft. Hannah and Lea own the release and account follow-up.\n\nAshland's completed selector test covers ASH-KIT-P1. The current proposal is ASH-KIT-P2. Its five consumer variants exclude launch-fr and pricing-de, leaving home-en, launch-en and pricing-en. The current preview instead contains home-en, launch-fr and pricing-en. A count of three passes while membership is wrong. Sofia should correct and test that same proposal's selector result and get review before Camille asks the site owner to verify it. A proposed preview does not establish a live page change.\n\nJuniperpeak's same-period report omission remains open. A completed issue or Activity Log entry does not prove that this distinct report case is fixed. Liam needs the neighboring-period regression, followed by Lena's administrator check of the same-period report. The other fresh Support and Engineering exchanges have acknowledged owners and do not need another agent response.",
+  "reference": {
+    "example_messages": [
+      {
+        "destination": {
+          "channel_id": "C0CDF6C4A28273CC2",
+          "kind": "thread",
+          "thread_ts": "1790871243.520916"
+        },
+        "text": "I would start with Ashland Group's current proposed preview. Sofia's older selector patch passed review, but that test covered ASH-KIT-P1. For the later saved proposal ASH-KIT-P2, the [report](https://www.notion.so/b87c58b15e824d4999ada3d9cbf4b615) lists five page variants and excludes launch-fr and pricing-de. That leaves home-en, launch-en and pricing-en. The current preview instead shows home-en, launch-fr and pricing-en. Its count of three passes while the membership is wrong. Sofia should add a regression for this current set, get the correction reviewed, and then Camille should ask the site owner to confirm the same preview. There is no report of a live page change.\n\nRedpoint Assurance needs a different follow-up now. The approved-release binding repair was reviewed and deployed, and Ada confirmed that Publish completed for the original approved release. The later edited release has changed contents, so its unavailable Publish action calls for new named approval. Hannah and account owner Lea should coordinate that approval and verify that exact release afterward. I would keep the September 28 red health and high-risk labels in view without treating one workflow repair as proof that the wider account risk has cleared. See [ENGIN-16](https://linear.app/pagemantle/issue/ENGIN-16) and [CUSTO-10](https://linear.app/pagemantle/issue/CUSTO-10).\n\nJuniperpeak Group's rejected proposal is visible in Activity Log but remains missing from its same-period Agent Activity Report. Liam's local selector check did not complete Megan's neighboring-period regression or establish deployment. Lena can use the Activity Log as a clearly labeled interim reference, then ask the administrator to check the report against it when reviewed work is available. Completed ENGIN-10 concerns a separate reporting-period defect.\n\nThis order favors the demonstrated current Ashland preview mismatch. Redpoint's approval handoff or Juniperpeak's administrator review could move ahead if the customer review establishes greater immediate impact. The available records do not support a numerical churn ranking or a claim that any live page changed."
+      }
+    ],
+    "important_mistakes": [
+      "Treating Redpoint's verified approved release and later edited release as one failed case.",
+      "Using Redpoint's dated red health label as proof that the original defect remains open or that all account risk cleared.",
+      "Treating Ashland's passing target count or completed older patch as proof that the current target members are correct.",
+      "Treating Juniperpeak's Activity Log workaround or completed ENGIN-10 as recovery of the separate missing-report case.",
+      "Claiming a live page change from a proposed preview, or treating no report of one as proof that none occurred."
+    ],
+    "intent": "action",
+    "reason": "Jonah's fresh question warrants a supported three-account comparison with owners and next actions. The other recent messages are answered or visibly owned."
+  },
+  "scenario": "Customer Success is comparing three account cases. Later evidence confirms Redpoint's original approved release, leaves a new approval request, and reveals an Ashland current-preview membership mismatch despite a passing count. Juniperpeak's separate report omission remains open."
+}

@@ -1,0 +1,1 @@
+End your work after sending zero or more Slack messages. Call with no arguments and no other tool call in the same response. It sends no message.

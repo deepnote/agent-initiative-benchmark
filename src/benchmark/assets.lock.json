@@ -1,0 +1,48 @@
+{
+  "dataset": {
+    "build_ref": {
+      "build_id": "pagemantle-100e-30d-20261019-085526",
+      "manifest_sha256": "1d49f40665bdef2f8b7a1099ed799bcea1eee9e7c09828e2be86047e1da97e5e"
+    },
+    "file_index_bytes": 5637830,
+    "file_index_sha256": "0c6e56041d2bd2bdcda45d722bb216b603ba7edf2535d85fd1fbed79d56c7b3a",
+    "huggingface": {
+      "repository": "deepnote/pagemantle-company-dataset",
+      "revision": "eb412af9643bd081b7ec781d22305bbe66ba8fbf"
+    },
+    "manifest_sha256": "520116a06122b15df1afd0d530fa132fbb06c33fdbc1d36af887784fa1732a65"
+  },
+  "schema_version": 1,
+  "search": {
+    "files": [
+      {
+        "bytes": 706,
+        "path": "config.json",
+        "sha256": "13582bcf2effc85b7bf3d3f5532e686bc1c9ce86bb009d10f0ec33cbe92299dd"
+      },
+      {
+        "bytes": 66465124,
+        "path": "model_optimized.onnx",
+        "sha256": "51f1bd0addd6e859e42c2c8021a5e5461385bb676a649f4b269aa445449f2431"
+      },
+      {
+        "bytes": 695,
+        "path": "special_tokens_map.json",
+        "sha256": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a"
+      },
+      {
+        "bytes": 711396,
+        "path": "tokenizer.json",
+        "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+      },
+      {
+        "bytes": 1242,
+        "path": "tokenizer_config.json",
+        "sha256": "0b29c7bfc889e53b36d9dd3e686dd4300f6525110eaa98c76a5dafceb2029f53"
+      }
+    ],
+    "model": "BAAI/bge-small-en-v1.5",
+    "repository": "qdrant/bge-small-en-v1.5-onnx-q",
+    "revision": "aa8f8b060edb00e03bfdd08813a2949946c8ba55"
+  }
+}

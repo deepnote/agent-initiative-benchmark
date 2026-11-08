@@ -1,0 +1,9 @@
+{
+  "posthog_query_events": "Read events with exact filters and stable paging. Person and group properties describe the event time. Continue with next_cursor when has_more is true.",
+  "posthog_query_persons": "Read current person profiles. These may differ from properties recorded on past events.",
+  "posthog_query_insight": "Compute a saved insight exactly over the current task data. Dates end at an exclusive boundary. Read calculation for the applied dates and counting unit. Saved results and refresh times describe the stored analysis.",
+  "posthog_get_feature_flag": "Read a feature flag by its native ID or key, including stored history when present.",
+  "posthog_get_event": "Read one complete event by event_uuid.",
+  "posthog_list_catalog": "Discover event definitions, workspace groups, website groups, saved insights or feature flags. projection=summary omits only embedded saved insight result values and retains their definitions and refresh context. For one complete saved insight use kind=insights, its exact insight_id and projection=full. Explicit full also returns a full catalog. Native omitted projection remains full. Continue with next_cursor. Saved insight results are stored results, not a fresh calculation.",
+  "posthog_query_history": "Read stored person profile intervals, distinct ID links or flag history. Use native IDs. An absent history is reported explicitly. Do not infer identity links from similar names. Continue with next_cursor."
+}

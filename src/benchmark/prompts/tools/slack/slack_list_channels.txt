@@ -1,0 +1,1 @@
+List readable Slack channels with names, topics, purposes and IDs. By default exclude archived channels; archived channels are read-only. Set types to im to list DMs you have started without creating one. Employee and group DMs stay hidden. Returns channels, has_more and next_cursor. is_member is informational for supplied public/private channels.

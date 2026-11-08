@@ -1,0 +1,1 @@
+This object has no such contract property. Use hubspot_list_associations for this record, then follow the actual endpoint types and IDs to records with contract links.

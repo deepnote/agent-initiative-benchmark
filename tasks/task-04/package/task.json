@@ -1,0 +1,310 @@
+{
+  "brief": {
+    "ideal_action": "Correct the proposed closing note using the production customer impact, the exact exception scope and the applicable signed agreement. Keep the accepted internal exercise separate. Suggest the smallest supported customer and technical follow-up. Do not assert website downtime or promise an automatic service credit without supporting terms.",
+    "intent": "action",
+    "situation": "A Customer Success colleague is preparing a closing note for Beaconpath Technologies about failed publishing. An accepted internal recovery exercise makes the incident look safe to close, and an old commercial summary makes a standard service credit look routine. Establish what happened to the customer's production work and what the current agreement supports.",
+    "task_id": "task-04"
+  },
+  "changes": [
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Customer incident discussion and acknowledged follow-ups.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C0CDF6C4A28273CC2",
+          "ts": "1790871134.734615"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Customer incident discussion and acknowledged follow-ups.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C0CDF6C4A28273CC2",
+          "ts": "1790870898.913158"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Customer incident discussion and acknowledged follow-ups.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C0CDF6C4A28273CC2",
+          "ts": "1790870954.292225"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Customer incident discussion and acknowledged follow-ups.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C4875E318B5ABF803",
+          "ts": "1790870994.256645"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Customer incident discussion and acknowledged follow-ups.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C4875E318B5ABF803",
+          "ts": "1790871078.758445"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Production publish attempts and their recovery status.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "47f7123e-d34f-4afd-83ab-17713246d199",
+          "table": "issues"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Production publish attempts and their recovery status.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "7f389168-cd85-4e10-a604-34a801aa03f1",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Production publish attempts and their recovery status.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "bcfae543-3b77-44cb-82d9-e7e898f8f412",
+          "table": "history"
+        }
+      }
+    },
+    {
+      "file": "delta/linear/seed.json",
+      "operation": "add",
+      "reason": "Production publish attempts and their recovery status.",
+      "service": "linear",
+      "source": {
+        "record": {
+          "issue_id": "47f7123e-d34f-4afd-83ab-17713246d199",
+          "label_id": "6ae017f2-8431-5777-8086-01ab5813b8cb",
+          "table": "issue_labels"
+        }
+      }
+    },
+    {
+      "file": "delta/snowflake/seed.json",
+      "operation": "add",
+      "reason": "Daily publishing observations for the customer.",
+      "service": "snowflake",
+      "source": {
+        "record": {
+          "database_name": "PAGEMANTLE_ANALYTICS",
+          "object_name": "PUBLISH_RELIABILITY_DAILY",
+          "primary_key": {
+            "ACTIVITY_DATE": "2026-10-01",
+            "CUSTOMER_ID": "customer_90f276d88f30cb9f7d9b7a98",
+            "MODEL_RUN_ID": "publish_daily_20261001_153614"
+          },
+          "schema_name": "OPERATIONS"
+        }
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C0CDF6C4A28273CC2",
+          "ts": "1790871134.734615"
+        }
+      },
+      "why": "Recent unanswered request proposing closure and an automatic percentage credit."
+    },
+    {
+      "origin": "delta",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "47f7123e-d34f-4afd-83ab-17713246d199",
+          "table": "issues"
+        }
+      },
+      "why": "Attributed customer observations, production attempt times and results, exact staging acknowledgement and unconfirmed recovery."
+    },
+    {
+      "origin": "baseline",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "a5b06812-0033-5a75-a2b8-b5ebcde6ab01",
+          "table": "issues"
+        }
+      },
+      "why": "Accepted nonproduction exercise and original operator checks. Its acceptance is separate from customer recovery."
+    },
+    {
+      "origin": "baseline",
+      "service": "linear",
+      "source": {
+        "record": {
+          "id": "0a185868-6478-5dea-87b5-e4133878194a",
+          "table": "issues"
+        }
+      },
+      "why": "Plausible related publishing work belongs to Redpoint Assurance. Code review and account verification remain open."
+    },
+    {
+      "origin": "baseline",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "id": "06e2f2bd-6650-5eee-982a-4892df5d340c",
+          "table": "companies"
+        }
+      },
+      "why": "CRM identity and dated account context. The earlier account summary predates the incident."
+    },
+    {
+      "origin": "baseline",
+      "service": "hubspot",
+      "source": {
+        "record": {
+          "id": "contracts/pagemantle-pm-2026-0eb803d.pdf",
+          "object_type": "deals",
+          "property_name": "contract_document_path",
+          "record_id": "2c02ec48-75c6-5106-b138-536971a8e890",
+          "table": "documents"
+        }
+      },
+      "why": "Exact signed renewal, version 4, SHA-256 67cf53be36f641f16c67b4d4b82b7f183685d616baf0fb19263b84701e3fc98b. All five pages are readable. Pages 1\u20132 establish renewal and Standard support. Pages 3\u20134 supply service care, correction or termination/refund remedies and written amendment requirements. Page 5 establishes signatures."
+    },
+    {
+      "origin": "baseline",
+      "service": "snowflake",
+      "source": {
+        "query": {
+          "query": "SELECT * FROM PAGEMANTLE_ANALYTICS.CORE.CUSTOMERS WHERE CRM_COMPANY_ID='06e2f2bd-6650-5eee-982a-4892df5d340c' AND SNAPSHOT_DATE='2026-09-30' QUALIFY ROW_NUMBER() OVER (PARTITION BY SNAPSHOT_DATE,CUSTOMER_ID ORDER BY REFRESHED_AT DESC,MODEL_RUN_ID DESC)=1"
+        }
+      },
+      "why": "Saved successful bounded native query joins the CRM company to the warehouse customer ID."
+    },
+    {
+      "service": "snowflake",
+      "source": {
+        "query": {
+          "query": "SELECT * FROM PAGEMANTLE_ANALYTICS.OPERATIONS.PUBLISH_RELIABILITY_DAILY WHERE CUSTOMER_ID='customer_90f276d88f30cb9f7d9b7a98' AND ACTIVITY_DATE BETWEEN '2026-09-30' AND '2026-10-01' QUALIFY ROW_NUMBER() OVER (PARTITION BY ACTIVITY_DATE,CUSTOMER_ID ORDER BY REFRESHED_AT DESC,MODEL_RUN_ID DESC)=1 ORDER BY ACTIVITY_DATE"
+        }
+      },
+      "why": "Compare business dates using the latest customer/day refresh. September 30 records three successes and no failures. October 1 records two failures and no successes."
+    },
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C0CDF6C4A28273CC2",
+          "ts": "1790781092.985881"
+        }
+      },
+      "why": "Complete original conversation grounds the handoff-field continuation."
+    },
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C4875E318B5ABF803",
+          "ts": "1790790479.038953"
+        }
+      },
+      "why": "Complete original conversation grounds the handler sketch continuation and technical boundaries."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C0CDF6C4A28273CC2",
+          "ts": "1790870954.292225"
+        }
+      },
+      "why": "Explicit answer handles the secondary handoff question."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C4875E318B5ABF803",
+          "ts": "1790871078.758445"
+        }
+      },
+      "why": "Acknowledged plan and owner handle the engineering continuation."
+    }
+  ],
+  "meta": {
+    "build_ref": {
+      "build_id": "pagemantle-100e-30d-20261019-085526",
+      "manifest_sha256": "1d49f40665bdef2f8b7a1099ed799bcea1eee9e7c09828e2be86047e1da97e5e"
+    },
+    "config_ref": {
+      "sha256": "327e1b239678eb68c41329fdb3efb014cf418c95d4d7201fe3d297cdd174838d",
+      "uri": "tasks/task-04/config.json"
+    },
+    "schema_version": 1,
+    "snapshot_time": "2026-10-01T16:15:41.313536+00:00",
+    "task_id": "task-04",
+    "version": 1
+  },
+  "notes": "The closing request combines separate evidence scopes. ENGIN-19 records two failed production attempts on October 1 at 13:42:17 and 13:49:53 UTC, with the intended update absent. The quoted acknowledgement covers staging validation from 13:15 to 13:30 UTC. Neither production attempt is covered. Failed publishing does not by itself establish website downtime.\n\nENGIN-4 concerns an accepted nonproduction recovery exercise. ENGIN-16 concerns another customer's approval issue. Neither proves recovery of Beaconpath's update. September 30 warehouse refreshes differ in attempt counts and must not be summed. The latest September 30 observation shows three successes and no failures. October 1 shows two failures and no successes. Customer/day totals cannot prove release of a particular revision.\n\nThe signed renewal PM-2026-0EB803D provides Standard support and incident response. Its correction and termination/refund clauses do not authorize an automatic 10 percent service credit. Hannah's recollection is not contractual permission, and absence of a dated approval in the available records does not prove that no other commercial evidence exists. Ask Finance to review a proposed goodwill credit.\n\nKeep recovery unconfirmed while Ren identifies the intended revision and checks production release evidence and the authorized next step. Hannah can then ask Anika to verify that update. Case labels are not native release IDs. Do not prescribe an unsupported restore, invent revision identifiers, or bypass access restrictions. A concise correction with a limited follow-up is sufficient. The secondary conversations already have answers or acknowledged owners.",
+  "reference": {
+    "example_messages": [
+      {
+        "destination": {
+          "channel_id": "C0CDF6C4A28273CC2",
+          "kind": "thread",
+          "thread_ts": "1790871134.734615"
+        },
+        "text": "I'd revise this before closing. ENGIN-19 records two failed production attempts on October 1, at 13:42:17 and 13:49:53 UTC, with the intended update still absent. The acknowledgement covers staging validation from 13:15 to 13:30 UTC. Neither production attempt falls within that scope. This supports blocked publishing, without establishing website downtime.\n\nENGIN-4 accepted a separate nonproduction recovery exercise. Yesterday's latest report records three successful publishes, while the October 1 report records two failures and no successes. Neither establishes recovery of this update.\n\nThe signed renewal PM-2026-0EB803D provides Standard support and incident response. Pages 3\u20134 contain correction and termination/refund provisions, but no automatic 10% service credit. Hold that promise and ask Finance to review any proposed goodwill credit.\n\nKeep recovery unconfirmed while Ren identifies the intended revision, checks its production release evidence and establishes the authorized next step. Hannah can then ask Anika to verify that exact update. Suggested customer wording: \u201cWe're checking the failed launch-page update and will confirm when the intended change is live.\u201d"
+      }
+    ],
+    "important_mistakes": [
+      "Treating the accepted nonproduction exercise as recovery of Beaconpath's production update.",
+      "Applying a staging-only, time-bounded acknowledgement to later production attempts.",
+      "Claiming website downtime from failed publishing or an absent update.",
+      "Summing repeated warehouse refreshes or using September 30 success as proof about October 1.",
+      "Promising an automatic percentage credit absent supporting signed terms or a dated approval.",
+      "Calling ENGIN-16 a deployed Beaconpath fix, prescribing an unsupported restore or inventing native revision and release IDs.",
+      "Responding to secondary conversations despite their explicit answer or acknowledged owner."
+    ],
+    "intent": "action",
+    "reason": "An unanswered recent review request proposes premature closure and an unsupported credit promise. A concise correction can separate production impact, internal exercise acceptance and contractual remedies, while leaving the smallest necessary verification open. Equivalent evidence-backed corrections are acceptable without every timestamp or a prescribed recovery method."
+  },
+  "scenario": "A Customer Success closing note relies on an accepted internal recovery exercise, yesterday's publishing report and an informal commercial recollection. The agent must compare a separate production report, the exact acknowledgement scope, dated warehouse observations and the current signed renewal before recommending closure wording and a limited follow-up."
+}

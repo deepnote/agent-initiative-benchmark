@@ -1,0 +1,38 @@
+{
+  "build_ref": {
+    "build_id": "pagemantle-100e-30d-20261019-085526",
+    "manifest_sha256": "1d49f40665bdef2f8b7a1099ed799bcea1eee9e7c09828e2be86047e1da97e5e"
+  },
+  "config_ref": {
+    "sha256": "ba3dc80db7f523657f967b52a32488be999ec64c283b347dfcf75048e37a33ef",
+    "uri": "tasks/task-03/config.json"
+  },
+  "files": [
+    {
+      "bytes": 3815,
+      "path": "delta/analytics/seed.json",
+      "sha256": "cfffdd56e4b88e3eb2975e404ac64130f240411a7c8c6c9790ed002d35a932ff"
+    },
+    {
+      "bytes": 3959,
+      "path": "delta/linear/seed.json",
+      "sha256": "b4f938ae51d4bb2849ac1cef1642286c5543b2339a969f36e1d217bdd23a3742"
+    },
+    {
+      "bytes": 2206,
+      "path": "delta/search_console/seed.json",
+      "sha256": "007400d2d6e1673115d8dc20736dd80c6c39b92fb78bc1dcca53d296a814aacd"
+    },
+    {
+      "bytes": 3233,
+      "path": "delta/slack/seed.json",
+      "sha256": "8be872f2a5b19cac4396702c35c4667aaf7c32abc9a01218070ccd536f85cb29"
+    },
+    {
+      "bytes": 17967,
+      "path": "task.json",
+      "sha256": "d9cff36633dc6a6e122cc36e7931970e3e3dc19f2958a14dd7318502fd485895"
+    }
+  ],
+  "schema_version": 1
+}

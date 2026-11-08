@@ -1,0 +1,1 @@
+Exact nonempty message to deliver, at most 40000 characters. This is a cap, not a target length.

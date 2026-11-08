@@ -1,0 +1,540 @@
+{
+  "brief": {
+    "ideal_action": "Warn Jordan briefly that the proposed time conflicts with the actual October 2 finance review. Offer a specific 30-minute option supported by the required attendees, their agreed participation windows and the effective Calendar events. State the date and time zones clearly. Do not move existing meetings or treat an invitation response as proof that a meeting happened.",
+    "intent": "action",
+    "situation": "Operations is arranging a 30-minute handoff with Finance about who checks the enterprise close figures. Jordan proposes Friday, October 2 at 08:30 Pacific, before the usual finance review. The handoff needs the people who can explain and accept the figures, not everyone who receives the notes. Calendar records and the handoff note contain the current arrangements. Evidence comes from Google Calendar events and occurrence records, the Notion handoff decision page and linked Slack messages.",
+    "task_id": "task-07"
+  },
+  "changes": [
+    {
+      "file": "delta/calendar/seed.json",
+      "operation": "add",
+      "reason": "Effective Finance meeting occurrence and attendees.",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "001be768-fad6-5b83-ba84-853363899773",
+          "id": "a1749c65-1aa1-4cf4-92e1-9a0f6bb3b702",
+          "table": "events"
+        }
+      }
+    },
+    {
+      "file": "delta/calendar/seed.json",
+      "operation": "add",
+      "reason": "Effective Finance meeting occurrence and attendees.",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "olivia.chen@pagemantle.com",
+          "id": "invite_6208b89e86a44b14b8485a4ab883e2d7",
+          "table": "events"
+        }
+      }
+    },
+    {
+      "file": "delta/calendar/seed.json",
+      "operation": "add",
+      "reason": "Effective Finance meeting occurrence and attendees.",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "001be768-fad6-5b83-ba84-853363899773",
+          "email": "robert.miles@pagemantle.com",
+          "event_id": "a1749c65-1aa1-4cf4-92e1-9a0f6bb3b702",
+          "table": "attendees"
+        }
+      }
+    },
+    {
+      "file": "delta/calendar/seed.json",
+      "operation": "add",
+      "reason": "Effective Finance meeting occurrence and attendees.",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "001be768-fad6-5b83-ba84-853363899773",
+          "email": "olivia.chen@pagemantle.com",
+          "event_id": "a1749c65-1aa1-4cf4-92e1-9a0f6bb3b702",
+          "table": "attendees"
+        }
+      }
+    },
+    {
+      "file": "delta/calendar/seed.json",
+      "operation": "add",
+      "reason": "Effective Finance meeting occurrence and attendees.",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "001be768-fad6-5b83-ba84-853363899773",
+          "email": "patrick.osei@pagemantle.com",
+          "event_id": "a1749c65-1aa1-4cf4-92e1-9a0f6bb3b702",
+          "table": "attendees"
+        }
+      }
+    },
+    {
+      "file": "delta/calendar/seed.json",
+      "operation": "add",
+      "reason": "Effective Finance meeting occurrence and attendees.",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "001be768-fad6-5b83-ba84-853363899773",
+          "email": "fatima.zahra@pagemantle.com",
+          "event_id": "a1749c65-1aa1-4cf4-92e1-9a0f6bb3b702",
+          "table": "attendees"
+        }
+      }
+    },
+    {
+      "file": "delta/calendar/seed.json",
+      "operation": "add",
+      "reason": "Effective Finance meeting occurrence and attendees.",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "olivia.chen@pagemantle.com",
+          "email": "robert.miles@pagemantle.com",
+          "event_id": "invite_6208b89e86a44b14b8485a4ab883e2d7",
+          "table": "attendees"
+        }
+      }
+    },
+    {
+      "file": "delta/calendar/seed.json",
+      "operation": "add",
+      "reason": "Effective Finance meeting occurrence and attendees.",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "olivia.chen@pagemantle.com",
+          "email": "olivia.chen@pagemantle.com",
+          "event_id": "invite_6208b89e86a44b14b8485a4ab883e2d7",
+          "table": "attendees"
+        }
+      }
+    },
+    {
+      "file": "delta/calendar/seed.json",
+      "operation": "add",
+      "reason": "Effective Finance meeting occurrence and attendees.",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "olivia.chen@pagemantle.com",
+          "email": "patrick.osei@pagemantle.com",
+          "event_id": "invite_6208b89e86a44b14b8485a4ab883e2d7",
+          "table": "attendees"
+        }
+      }
+    },
+    {
+      "file": "delta/calendar/seed.json",
+      "operation": "add",
+      "reason": "Effective Finance meeting occurrence and attendees.",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "olivia.chen@pagemantle.com",
+          "email": "fatima.zahra@pagemantle.com",
+          "event_id": "invite_6208b89e86a44b14b8485a4ab883e2d7",
+          "table": "attendees"
+        }
+      }
+    },
+    {
+      "file": "delta/calendar/seed.json",
+      "operation": "add",
+      "reason": "Effective Finance meeting occurrence and attendees.",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "001be768-fad6-5b83-ba84-853363899773",
+          "event_id": "a1749c65-1aa1-4cf4-92e1-9a0f6bb3b702",
+          "position": 0,
+          "table": "reminders"
+        }
+      }
+    },
+    {
+      "file": "delta/calendar/seed.json",
+      "operation": "add",
+      "reason": "Effective Finance meeting occurrence and attendees.",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "olivia.chen@pagemantle.com",
+          "event_id": "invite_6208b89e86a44b14b8485a4ab883e2d7",
+          "position": 0,
+          "table": "reminders"
+        }
+      }
+    },
+    {
+      "file": "delta/notion/seed.json",
+      "operation": "add",
+      "reason": "Finance handoff participants, purpose and agreed windows.",
+      "service": "notion",
+      "source": {
+        "record": {
+          "id": "d7ba0913-1e58-4e0f-8bfa-e3457286a842",
+          "table": "pages"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Meeting handoff and confirmed participant availability.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790784317.124000"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Meeting handoff and confirmed participant availability.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790784644.280000"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Meeting handoff and confirmed participant availability.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790784861.671000"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Meeting handoff and confirmed participant availability.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790785116.938000"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Meeting handoff and confirmed participant availability.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790785309.562000"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Meeting handoff and confirmed participant availability.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790871222.014212"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Meeting handoff and confirmed participant availability.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790871092.945653"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Meeting handoff and confirmed participant availability.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790871152.368548"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Meeting handoff and confirmed participant availability.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790870947.010438"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Meeting handoff and confirmed participant availability.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790871012.261946"
+        }
+      }
+    },
+    {
+      "file": "delta/slack/seed.json",
+      "operation": "add",
+      "reason": "Meeting handoff and confirmed participant availability.",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C11896B48535B4D9B",
+          "ts": "1790871047.572083"
+        }
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "origin": "baseline",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "001be768-fad6-5b83-ba84-853363899773",
+          "id": "b5952a7c-8e87-5741-805e-e482a3f639e8",
+          "table": "events"
+        }
+      },
+      "why": "Native detail confirms the first-Friday 09:00\u201309:45 Pacific series and its four required Finance attendees."
+    },
+    {
+      "origin": "baseline",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "olivia.chen@pagemantle.com",
+          "id": "invite_81c266c5dd52ab17967efe628d63632e",
+          "table": "events"
+        }
+      },
+      "why": "October 2 native search exposes this readable attendee-calendar copy of the same series."
+    },
+    {
+      "origin": "delta",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "001be768-fad6-5b83-ba84-853363899773",
+          "id": "a1749c65-1aa1-4cf4-92e1-9a0f6bb3b702",
+          "table": "events"
+        }
+      },
+      "why": "The October 2 exception supplies the effective 08:30\u201309:15 Pacific conflict while retaining its original 09:00 occurrence identity."
+    },
+    {
+      "origin": "delta",
+      "service": "calendar",
+      "source": {
+        "record": {
+          "calendar_id": "olivia.chen@pagemantle.com",
+          "id": "invite_6208b89e86a44b14b8485a4ab883e2d7",
+          "table": "events"
+        }
+      },
+      "why": "The matching readable attendee copy preserves effective Calendar consistency."
+    },
+    {
+      "origin": "baseline",
+      "service": "notion",
+      "source": {
+        "record": {
+          "id": "0ac78527-4a7e-5d59-9895-f57279184a97",
+          "table": "pages"
+        }
+      },
+      "why": "Original decision template distinguishes a proposal, accepted decision, accountable owner and handoff."
+    },
+    {
+      "origin": "baseline",
+      "service": "notion",
+      "source": {
+        "record": {
+          "id": "7692942e-6c3e-50dd-b0bb-92121171851e",
+          "table": "pages"
+        }
+      },
+      "why": "Meeting guidance requires essential contributors, effective Calendar times and time-zone checks. An accepted invitation does not establish attendance."
+    },
+    {
+      "origin": "baseline",
+      "service": "notion",
+      "source": {
+        "record": {
+          "id": "8efb4a5b-7430-56ae-8c1b-efb93e580190",
+          "table": "pages"
+        }
+      },
+      "why": "Cross-location guidance requires explicit dates, zones and realistic participation arrangements."
+    },
+    {
+      "origin": "baseline",
+      "service": "notion",
+      "source": {
+        "record": {
+          "id": "6fcb86b8-eb89-5552-827c-5093371cf574",
+          "table": "pages"
+        }
+      },
+      "why": "Fatima coordinates preparation, Robert owns finance interpretation and Olivia reviews leadership judgments."
+    },
+    {
+      "origin": "baseline",
+      "service": "notion",
+      "source": {
+        "record": {
+          "id": "2e390a6b-7c36-54cf-b07d-88bab3572321",
+          "table": "pages"
+        }
+      },
+      "why": "Original August worksheet is reused unchanged as preparation. Its account-state exception remains unresolved."
+    },
+    {
+      "origin": "delta",
+      "service": "notion",
+      "source": {
+        "record": {
+          "id": "d7ba0913-1e58-4e0f-8bfa-e3457286a842",
+          "table": "pages"
+        }
+      },
+      "why": "Identifies essential handoff participants, Robert's handoff-only optional status, confirmed booking windows and linked dated confirmations."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790784644.280000"
+        }
+      },
+      "why": "Olivia explicitly confirms her checked October 2 booking window and acceptance role."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790784861.671000"
+        }
+      },
+      "why": "Fatima explicitly confirms availability ending at 17:30 London and her source-check contribution."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790785116.938000"
+        }
+      },
+      "why": "Jordan confirms her checked New York booking window."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790785309.562000"
+        }
+      },
+      "why": "Olivia explicitly accepts the handoff participation arrangement without resolving older finance exceptions."
+    },
+    {
+      "origin": "baseline",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C11896B48535B4D9B",
+          "ts": "1790704833.596615"
+        }
+      },
+      "why": "The original access thread already identifies Amelia as reviewer and bounds the requested scope. Its fresh acknowledgment requires no additional agent reply."
+    },
+    {
+      "origin": "delta",
+      "service": "slack",
+      "source": {
+        "record": {
+          "channel_id": "C19D035C941DFE84B",
+          "ts": "1790871222.014212"
+        }
+      },
+      "why": "Fresh proposal creates the actionable scheduling conflict without supplying the answer."
+    }
+  ],
+  "meta": {
+    "build_ref": {
+      "build_id": "pagemantle-100e-30d-20261019-085526",
+      "manifest_sha256": "1d49f40665bdef2f8b7a1099ed799bcea1eee9e7c09828e2be86047e1da97e5e"
+    },
+    "config_ref": {
+      "sha256": "4c81bb662f2728d61d6ce4aca674e404eb60567a41b8e79a138db0941f39cb9c",
+      "uri": "tasks/task-07/config.json"
+    },
+    "schema_version": 1,
+    "snapshot_time": "2026-10-01T16:15:41.313536+00:00",
+    "task_id": "task-07",
+    "version": 1
+  },
+  "notes": "The handoff requires Jordan, Olivia and Fatima. Robert is optional for that handoff, even though he is required for the Finance review. Patrick's Finance-review attendance does not make him essential to the handoff.\n\nOn October 2 the effective Finance occurrence is 08:30 to 09:15 Pacific, rather than the recurring master's usual 09:00 start. The three confirmed handoff windows overlap from 08:00 to 09:30 Pacific. Subtracting the Finance interval leaves 08:00 to 08:30 as the supported 30-minute option. The 09:15 to 09:30 remainder is too short. A 09:15 to 09:45 option would end at 17:45 London, after Fatima's agreed finish.\n\nReply briefly in Jordan's thread with Friday, October 2, 08:00 to 08:30 PDT, 11:00 to 11:30 EDT and 16:00 to 16:30 BST. Do not move or book meetings. Invitation responses do not prove a meeting happened, and inaccessible personal calendars or empty results do not establish availability. Written worksheet comments remain a fallback if the participants reject the live option. The other acknowledged worksheet, agenda and access-routing discussions need no new reply.",
+  "reference": {
+    "example_messages": [
+      {
+        "destination": {
+          "channel_id": "C19D035C941DFE84B",
+          "kind": "thread",
+          "thread_ts": "1790871222.014212"
+        },
+        "text": "Jordan, the October 2 Finance review is scheduled for 08:30\u201309:15 Pacific, so the proposed handoff clashes. I suggest Friday, October 2, 08:00\u201308:30 PDT, which is 11:00\u201311:30 EDT in New York and 16:00\u201316:30 BST in London. That fits the confirmed windows for you, Olivia and Fatima. Robert is optional for the handoff."
+      }
+    ],
+    "important_mistakes": [
+      "Use the recurring master's usual 09:00 start instead of the effective October 2 exception.",
+      "Suggest 09:15\u201309:45 Pacific without noticing that it ends at 17:45 London, beyond Fatima's agreed finish.",
+      "Treat Robert or Patrick as essential to the handoff because they are required Finance-review attendees.",
+      "Infer personal availability from inaccessible calendars, empty results or invitation responses.",
+      "Move existing meetings, claim that a scheduled meeting happened, or imply that the August worksheet exception was resolved.",
+      "Reply unnecessarily to the handled worksheet, agenda or access-routing conversations."
+    ],
+    "intent": "action",
+    "reason": "Olivia, Fatima and Jordan are essential to this handoff. Their confirmed windows overlap from 08:00 to 09:30 Pacific on October 2. The effective Finance review blocks 08:30\u201309:15, leaving 08:00\u201308:30 as the supported 30-minute option. The remaining 09:15\u201309:30 interval is too short. A brief threaded correction prevents a conflicting proposal without booking or moving anything. Written worksheet comments remain an evidence-supported fallback if the participants subsequently reject the live option."
+  },
+  "scenario": "A proposed enterprise-close handoff conflicts with a moved Finance-review occurrence. The agent must distinguish handoff participation from review attendance and respect confirmed booking windows across time zones."
+}

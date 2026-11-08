@@ -1,0 +1,10 @@
+{
+  "owner_catalog": "owner_id requires the owners catalog.",
+  "unknown_property": "Unknown property: {property_name}. It is absent from the selected object schema. Record identity is returned as top-level id. Use hubspot_list_metadata with catalog=property_definitions and object_type to find readable property names. Do not assume aliases.",
+  "invalid_filter_type": "Invalid filter value type.",
+  "property_catalog": "property_name requires the property_values catalog.",
+  "invalid_options": "Invalid native property options.",
+  "invalid_order": "order must be asc or desc.",
+  "parent_type_required": "object_type is required with record_id.",
+  "invalid_activity_projection": "Use detail=compact or full, body_chars from 0 to 4000, and a query of at most 200 characters."
+}

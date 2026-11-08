@@ -1,0 +1,23 @@
+{
+  "build_ref": {
+    "build_id": "pagemantle-100e-30d-20261019-085526",
+    "manifest_sha256": "1d49f40665bdef2f8b7a1099ed799bcea1eee9e7c09828e2be86047e1da97e5e"
+  },
+  "config_ref": {
+    "sha256": "6cc3b58ab0a798746b27d7999735c07ea16ef4454cdd0c11c509fca1e6aea019",
+    "uri": "tasks/task-01/config.json"
+  },
+  "files": [
+    {
+      "bytes": 3445,
+      "path": "delta/slack/seed.json",
+      "sha256": "b4f09674c7c6f68356cc628465f226b3c31c5b737a67137280a3e821f8bd9c9c"
+    },
+    {
+      "bytes": 13986,
+      "path": "task.json",
+      "sha256": "c640fcd16c969214e47fead709c795fb873cb0834f9cca2cbb13326b584ad89c"
+    }
+  ],
+  "schema_version": 1
+}

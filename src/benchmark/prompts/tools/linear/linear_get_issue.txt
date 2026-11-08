@@ -1,0 +1,1 @@
+Read an accessible issue by ID or case-insensitive identifier. Returns full description, labels, people, team, state, project, relations and history. Returns at most 200 oldest comments; comments_truncated means more exist with no comment continuation. Catalogs have no standalone discovery tool.

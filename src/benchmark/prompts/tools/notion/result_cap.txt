@@ -1,0 +1,2 @@
+
+Each result is limited to {max_result_bytes} bytes. Reduce page_size or max_chars if needed.

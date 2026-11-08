@@ -1,0 +1,6 @@
+include README.md CITATION.cff requirements.lock .gitignore
+graft docs
+graft examples
+graft tasks
+graft tests
+global-exclude __pycache__ *.py[cod] .DS_Store

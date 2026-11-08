@@ -1,0 +1,5 @@
+{
+  "analytics_get_metadata": "Read the Analytics property you can access, report fields and stored row types. Call without property_id to discover that property and its ID. This reads metadata only.",
+  "analytics_run_report": "Run an exact Analytics report at the supported grain. Dates use the fixed snapshot in the property timezone. Dimension filters run before aggregation and metric filters after aggregation. Results include the full grouped row count before paging. User counts cannot be combined across stored buckets without user identities.",
+  "analytics_read_rows": "Read exact saved Analytics rows with equality filters and cursor paging. Sessions and events are daily aggregate buckets in v2. Realtime, cohorts and attribution are separate stored projections. Realtime shows its saved window and age, not current traffic. Cohort rates retain their numerator, denominator and activity week. Attribution credit belongs to its named model. Samples are subsets and cannot establish totals. Missing projections return an explicit error."
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use Agent Initiative Benchmark, please cite it using this file."
+title: Agent Initiative Benchmark
+type: software
+authors:
+  - name: Deepnote
+    website: https://deepnote.com
+version: "1.0.0"
+repository-code: https://github.com/deepnote/agent-proactiveness-benchmark
+url: https://github.com/deepnote/agent-proactiveness-benchmark

@@ -1,0 +1,1 @@
+List visible Stripe invoices by customer, subscription, status or creation time. Date bounds are exclusive timestamps with a timezone. Returns a page of invoice states and money in minor units with currency.

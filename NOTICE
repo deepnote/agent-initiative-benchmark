@@ -1,0 +1,16 @@
+Agent Initiative Benchmark
+
+Code, documentation, prompts and task packages are licensed under the
+Apache License, Version 2.0. See LICENSE.
+
+src/benchmark/dataset-manifest.json is the unmodified release manifest of
+the PageMantle Company Dataset, version 1.0.0, by Deepnote, describing the
+September 30, 2026 snapshot. This manifest and the separately distributed
+dataset are licensed under Creative Commons Attribution 4.0 International.
+See LICENSES/PageMantle-CC-BY-4.0.txt and
+https://creativecommons.org/licenses/by/4.0/.
+
+Python package license metadata lists both licenses because the package
+includes that dataset manifest. Other repository content uses Apache 2.0
+unless a file states otherwise. Third-party dependencies and search weights
+retain their own licenses. See THIRD_PARTY_NOTICES.md.

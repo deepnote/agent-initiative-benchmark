@@ -1,0 +1,1 @@
+Read availability in a bounded window with UTC offsets. Busy intervals include supported recurring occurrences and exceptions. Cancelled and transparent events do not block time. Unsupported recurrence or limits return an error. No invitations are sent.

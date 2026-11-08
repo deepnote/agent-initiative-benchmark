@@ -1,0 +1,33 @@
+{
+  "build_ref": {
+    "build_id": "pagemantle-100e-30d-20261019-085526",
+    "manifest_sha256": "1d49f40665bdef2f8b7a1099ed799bcea1eee9e7c09828e2be86047e1da97e5e"
+  },
+  "config_ref": {
+    "sha256": "327e1b239678eb68c41329fdb3efb014cf418c95d4d7201fe3d297cdd174838d",
+    "uri": "tasks/task-04/config.json"
+  },
+  "files": [
+    {
+      "bytes": 2289,
+      "path": "delta/linear/seed.json",
+      "sha256": "544383933318fdbd8ecf0548121c65e11fcabfc2b089a91dc8695c8422a59363"
+    },
+    {
+      "bytes": 2472,
+      "path": "delta/slack/seed.json",
+      "sha256": "d773335b1037ef921731b664b9f0ee4c89b608d2e816f994448d3e56144dfd62"
+    },
+    {
+      "bytes": 607,
+      "path": "delta/snowflake/seed.json",
+      "sha256": "81397efc53358ab20043d9b3732ab56f3b37f26f8c1de8250230d118844cac7e"
+    },
+    {
+      "bytes": 14174,
+      "path": "task.json",
+      "sha256": "ab43c452fb8b772ffd2999d4ae072f366a5b43aca4cc19f2170002e5dbd9926d"
+    }
+  ],
+  "schema_version": 1
+}

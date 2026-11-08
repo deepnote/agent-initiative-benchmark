@@ -1,0 +1,1 @@
+Search Notion page content by meaning. Results are a ranked subset. Use notion_list_catalog for complete discovery.

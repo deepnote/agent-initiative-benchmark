@@ -1,0 +1,1 @@
+Comma-separated string or string array: public_channel, private_channel, im, mpim. Default public_channel,private_channel; access still hides employee/group DMs.

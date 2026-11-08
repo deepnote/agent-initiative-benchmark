@@ -1,0 +1,1 @@
+Immediately deliver exact text under an existing thread root. Use root thread_ts, not a recent reply ts. Returns a successful message or compact receipt including channel_id and ts. Do not resend a compact receipt.

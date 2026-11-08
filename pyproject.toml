@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-initiative-benchmark"
+version = "1.0.0"
+description = "A command-line benchmark for agent initiative at work"
+authors = [{name = "Deepnote"}]
+readme = "README.md"
+license = "Apache-2.0 AND CC-BY-4.0"
+license-files = ["LICENSE", "LICENSES/*.txt", "NOTICE", "THIRD_PARTY_NOTICES.md"]
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "duckdb==1.4.2",
+    "fastembed==0.8.0",
+    "hnswlib==0.8.0",
+    "httpx==0.28.1",
+    "ijson==3.5.1",
+    "numpy==2.5.2",
+    "pypdf==6.10.0",
+    "python-dotenv==1.2.3",
+]
+
+[project.urls]
+Repository = "https://github.com/deepnote/agent-proactiveness-benchmark"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+benchmark = ["assets.lock.json", "dataset-manifest.json", "config.toml", "prompts/**/*.txt", "prompts/**/*.json"]
+
+[project.scripts]
+benchmark = "benchmark.__main__:main"

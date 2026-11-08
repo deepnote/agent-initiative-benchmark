@@ -1,0 +1,1 @@
+List stored revisions or version names for a page. Follow next_cursor for more. Empty history means none is stored. Version names do not establish an edit time.
