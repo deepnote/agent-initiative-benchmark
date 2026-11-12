@@ -1,6 +1,6 @@
 <div align="center">
 
-# Agent Initiative Benchmark 1.0
+# Agent Initiative Benchmark v1.0
 
 **Evaluating agents that help without being asked.**
 
