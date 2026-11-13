@@ -19,6 +19,8 @@ services and decide whether to help. It must choose what to say, who to contact
 and where to send it. If the problem is already handled, the right action is
 silence.
 
+![Average benchmark scores by model](assets/average_score.webp)
+
 ## Example
 
 **In Slack**
@@ -70,6 +72,17 @@ This repository includes eight runnable examples, one per task type.
 | Guard | Check who may access or share information and whether a proposed action follows company rules. |
 
 </details>
+
+## Our results
+
+We evaluated 12 models on 50 tasks across all eight task types.
+See the [full results](https://deepnote.com/research/benchmark).
+
+![Average benchmark scores by model with confidence intervals](assets/score_confidence.webp)
+![Average benchmark scores against cost](assets/score_vs_cost.webp)
+![When to speak and when to stay silent](assets/speak_and_silent.webp)
+![Average benchmark scores by task type and model](assets/scores_by_task_type.webp)
+![Resource use](assets/resource_use.webp)
 
 ## Citation
 
