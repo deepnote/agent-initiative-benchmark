@@ -6,8 +6,8 @@ On Ubuntu, install `build-essential` and the headers for your Python 3.13.
 Clone the repository and install:
 
 ```sh
-git clone https://github.com/deepnote/agent-proactiveness-benchmark.git
-cd agent-proactiveness-benchmark
+git clone https://github.com/deepnote/agent-initiative-benchmark.git
+cd agent-initiative-benchmark
 python3.13 -m venv .venv
 source .venv/bin/activate
 python -m pip install --require-hashes -r requirements.lock

@@ -73,7 +73,19 @@ This repository includes eight runnable examples, one per task type.
 
 ## Citation
 
-To cite this benchmark, use [CITATION.cff](CITATION.cff).
+To reference Agent Initiative Benchmark in your work, use:
+
+```bibtex
+@misc{deepnote2026agentinitiative,
+  title = {{Agent Initiative Benchmark}},
+  author = {{Deepnote}},
+  year = {2026},
+  version = {1.0.0},
+  url = {https://github.com/deepnote/agent-initiative-benchmark}
+}
+```
+
+You can also use GitHub's **Cite this repository** button.
 
 ## License
 

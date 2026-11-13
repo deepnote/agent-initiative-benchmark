@@ -23,7 +23,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/deepnote/agent-proactiveness-benchmark"
+Repository = "https://github.com/deepnote/agent-initiative-benchmark"
 
 [tool.setuptools.packages.find]
 where = ["src"]
